@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-background: #0f0f0f;
+  --color-surface: #18181b;
+  --color-surface-raised: #27272a;
+  --color-accent: #f97316;
+  --color-accent-light: #fb923c;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #fafafa;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Prose customizations for dark theme */
+.prose :where(table):not(:where([class~="not-prose"] *)) {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.prose :where(th, td):not(:where([class~="not-prose"] *)) {
+  border: 1px solid #3f3f46;
+  padding: 0.5rem 0.75rem;
+}
+
+.prose :where(tr:nth-child(even)):not(:where([class~="not-prose"] *)) {
+  background-color: #18181b;
+}
