@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants'
 
-const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID
+const ADSENSE_ID = 'ca-pub-1924666314588553'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   verification: {
     google: '3Dz6V9apg0cGQubY1C6c54Yfm8Slp41NV1Btp9fCibk',
+    other: {
+      'google-adsense-account': 'ca-pub-1924666314588553',
+    },
   },
   openGraph: {
     type: 'website',
