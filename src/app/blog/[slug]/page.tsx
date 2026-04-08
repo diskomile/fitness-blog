@@ -8,6 +8,7 @@ import { getCategoryBySlug, getCategoryColor } from '@/lib/categories'
 import AffiliateBox from '@/components/mdx/AffiliateBox'
 import ProTip from '@/components/mdx/ProTip'
 import CategoryBadge from '@/components/blog/CategoryBadge'
+import FtcDisclosure from '@/components/blog/FtcDisclosure'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -78,6 +79,8 @@ export default async function PostPage({
           <p className="mt-4 text-lg text-zinc-400">{post.description}</p>
         )}
       </header>
+
+      <FtcDisclosure />
 
       <div className="prose prose-invert prose-orange max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-orange-400 prose-strong:text-white prose-code:text-orange-300 prose-th:text-white prose-td:text-zinc-300">
         <MDXRemote

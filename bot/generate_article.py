@@ -67,6 +67,7 @@ def generate_article(
     slug: str,
     today: str,
     client: Groq,
+    existing_slugs: list[str] | None = None,
     model: str = "llama-3.3-70b-versatile",
 ) -> str:
     """Call Groq API and return the MDX article content."""
@@ -77,6 +78,7 @@ def generate_article(
         products=products,
         slug=slug,
         date=today,
+        existing_slugs=existing_slugs,
     )
     print(f"  Calling Groq ({model})...", flush=True)
     response = client.chat.completions.create(
@@ -158,11 +160,14 @@ def main() -> None:
         existing_slugs = get_existing_slugs()
         topic, slug = pick_topic(category, existing_slugs)
 
+    all_slugs = list(get_existing_slugs())
+
     print(f"\nGenerating article...")
     print(f"  Category : {category}")
     print(f"  Topic    : {topic}")
     print(f"  Slug     : {slug}")
     print(f"  Date     : {today}")
+    print(f"  Existing : {len(all_slugs)} articles for internal linking")
 
     content = generate_article(
         topic=topic,
@@ -170,6 +175,7 @@ def main() -> None:
         slug=slug,
         today=today,
         client=client,
+        existing_slugs=all_slugs,
         model=args.model,
     )
 

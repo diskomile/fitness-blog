@@ -1,15 +1,19 @@
 """
 Affiliate product database.
 
-URLs koriste Amazon search format koji uvijek radi.
-Kada dobiješ Amazon Associates nalog, zamijeni search URL-ove sa
-direktnim ASIN linkovima: https://www.amazon.com/dp/ASIN?tag=TVOJ_TAG
+Podržani programi:
+- Amazon Associates (search URL format)
+- ClickBank fitness programi (30-75% komisija)
+- MyProtein affiliate (suplementi)
+
+Kada dobiješ direktne affiliate linkove, zamijeni URL-ove ispod.
 """
 
 import os
 import urllib.parse
 
 AMAZON_TAG = os.environ.get("AMAZON_TAG", "")
+MYPROTEIN_TAG = os.environ.get("MYPROTEIN_TAG", "")  # Prijava: impact.com → MyProtein
 
 
 def build_amazon_search_url(query: str) -> str:
@@ -19,6 +23,76 @@ def build_amazon_search_url(query: str) -> str:
     if AMAZON_TAG:
         base += f"&tag={AMAZON_TAG}"
     return base
+
+
+def build_myprotein_url(path: str) -> str:
+    """MyProtein affiliate URL. Registracija: impact.com → MyProtein."""
+    base = f"https://www.myprotein.com{path}"
+    if MYPROTEIN_TAG:
+        base += f"?affil={MYPROTEIN_TAG}"
+    return base
+
+
+# ClickBank fitness programi — visoke komisije (30-75%)
+# Registracija: clickbank.com → pronađi proizvod → generiši hoplink
+CLICKBANK_PRODUCTS: dict[str, list[dict]] = {
+    "workouts": [
+        {
+            "name": "Kinobody Aggressive Fat Loss Program",
+            "url": "https://www.clickbank.com/search/#/search-results?query=kinobody+fat+loss",
+            "price": "$47.00",
+            "badge": "Top Rated",
+            "network": "clickbank",
+            "description": "Proven intermittent fasting + training system. 30-day money back guarantee.",
+        },
+        {
+            "name": "Old School New Body F4X Training System",
+            "url": "https://www.clickbank.com/search/#/search-results?query=old+school+new+body",
+            "price": "$20.00",
+            "badge": "Best Value",
+            "network": "clickbank",
+            "description": "Anti-aging fitness system for men and women over 35. Simple 4-day workout plan.",
+        },
+    ],
+    "weight-loss": [
+        {
+            "name": "The Smoothie Diet 21-Day Program",
+            "url": "https://www.clickbank.com/search/#/search-results?query=smoothie+diet+program",
+            "price": "$37.00",
+            "badge": "Best Seller",
+            "network": "clickbank",
+            "description": "21-day rapid weight loss program using healthy smoothie replacements.",
+        },
+        {
+            "name": "Flat Belly Fix Program",
+            "url": "https://www.clickbank.com/search/#/search-results?query=flat+belly+fix",
+            "price": "$37.00",
+            "badge": "Popular",
+            "network": "clickbank",
+            "description": "28-day belly fat elimination system with meal plans and workouts.",
+        },
+    ],
+    "muscle-building": [
+        {
+            "name": "MI40 Muscle Intelligence Program",
+            "url": "https://www.clickbank.com/search/#/search-results?query=MI40+muscle+program",
+            "price": "$77.00",
+            "badge": "Pro Pick",
+            "network": "clickbank",
+            "description": "Ben Pakulski's science-based muscle building system used by thousands.",
+        },
+    ],
+    "nutrition": [
+        {
+            "name": "Custom Keto Diet Plan",
+            "url": "https://www.clickbank.com/search/#/search-results?query=custom+keto+diet",
+            "price": "$37.00",
+            "badge": "Top Seller",
+            "network": "clickbank",
+            "description": "Personalized 8-week keto meal plan based on your body type and goals.",
+        },
+    ],
+}
 
 
 # Products organized by category
@@ -179,12 +253,15 @@ PRODUCTS: dict[str, list[dict]] = {
 
 
 def get_products_for_category(category: str) -> list[dict]:
-    """Return products for a category, falling back to supplements."""
-    products = PRODUCTS.get(category, PRODUCTS.get("supplements", []))
-    return [
+    """Return products for a category — miješa Amazon i ClickBank."""
+    amazon = PRODUCTS.get(category, PRODUCTS.get("supplements", []))
+    amazon_resolved = [
         {**p, "url": build_amazon_search_url(p["search"]), "network": "amazon"}
-        for p in products
+        for p in amazon
     ]
+    clickbank = CLICKBANK_PRODUCTS.get(category, [])
+    # Vrati Amazon + ClickBank zajedno (max 4 ukupno)
+    return (amazon_resolved + clickbank)[:4]
 
 
 def get_affiliate_box_mdx(product: dict) -> str:

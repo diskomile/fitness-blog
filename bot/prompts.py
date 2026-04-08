@@ -31,6 +31,7 @@ def build_article_prompt(
     products: list[dict],
     slug: str,
     date: str,
+    existing_slugs: list[str] | None = None,
 ) -> str:
     # Build the affiliate boxes string
     affiliate_boxes = "\n\n".join(get_affiliate_box_mdx(p) for p in products[:3])
@@ -44,6 +45,16 @@ def build_article_prompt(
         f'    network: "{p["network"]}"'
         for p in products[:3]
     )
+
+    # Internal links section
+    internal_links_section = ""
+    if existing_slugs:
+        sample = existing_slugs[:5]
+        links_list = "\n".join(f"- /blog/{s}" for s in sample)
+        internal_links_section = f"""
+- Naturally link to 2-3 of these existing articles where relevant (use markdown links):
+{links_list}
+"""
 
     return f"""Write a complete, publication-ready MDX fitness article on this topic:
 
@@ -75,7 +86,7 @@ Article requirements:
 - Use <ProTip> for 1-2 genuinely useful expert insights
 - End with a practical conclusion paragraph (no "as a conclusion" phrasing)
 - Approximate word count: 1800-2200 words
-
+{internal_links_section}
 Write the complete article now:"""
 
 
