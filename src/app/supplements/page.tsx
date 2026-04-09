@@ -1,0 +1,81 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Supplement Comparisons & Reviews',
+  description: 'Honest, evidence-based supplement comparisons. Find the best protein powder, creatine, pre-workout and more — with price-per-serving analysis.',
+}
+
+const comparisons = [
+  {
+    href: '/supplements/best-whey-protein',
+    title: 'Best Whey Protein 2026',
+    description: 'We compare 6 top whey proteins by price per serving, protein %, ingredients, and taste.',
+    icon: '🥛',
+    badge: 'Most Popular',
+  },
+  {
+    href: '/supplements/best-creatine',
+    title: 'Best Creatine Monohydrate',
+    description: 'Creatine monohydrate vs HCl vs ethyl ester — what does the science actually say?',
+    icon: '⚡',
+    badge: null,
+  },
+  {
+    href: '/supplements/best-pre-workout',
+    title: 'Best Pre-Workout Supplements',
+    description: 'Side-by-side comparison of stimulant and stim-free pre-workouts with full ingredient breakdown.',
+    icon: '🔥',
+    badge: null,
+  },
+  {
+    href: '/supplements/best-protein-for-beginners',
+    title: 'Best Protein Powder for Beginners',
+    description: 'Not sure where to start? We break down the simplest, most effective options under €30.',
+    icon: '🌱',
+    badge: 'New',
+  },
+]
+
+export default function SupplementsPage() {
+  return (
+    <main className="mx-auto max-w-5xl px-4 py-12">
+      <div className="mb-10">
+        <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
+          Supplement <span className="text-orange-400">Comparisons</span>
+        </h1>
+        <p className="mt-3 text-zinc-400 max-w-2xl">
+          Honest, evidence-based reviews. Every comparison includes price-per-serving analysis, ingredient breakdowns, and clear winners — no sponsored bias.
+        </p>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2">
+        {comparisons.map((c) => (
+          <Link
+            key={c.href}
+            href={c.href}
+            className="group relative flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition-colors hover:border-orange-500/50"
+          >
+            {c.badge && (
+              <span className={`absolute right-4 top-4 rounded-full px-2 py-0.5 text-xs font-semibold ${c.badge === 'New' ? 'bg-green-600 text-white' : 'bg-orange-500 text-white'}`}>
+                {c.badge}
+              </span>
+            )}
+            <span className="mb-3 text-4xl">{c.icon}</span>
+            <h2 className="mb-2 text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
+              {c.title}
+            </h2>
+            <p className="flex-1 text-sm text-zinc-400">{c.description}</p>
+            <span className="mt-4 text-sm font-semibold text-orange-400">Read comparison →</span>
+          </Link>
+        ))}
+      </div>
+
+      <div className="mt-10 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5">
+        <p className="text-xs text-zinc-500">
+          <strong className="text-zinc-400">Affiliate disclosure:</strong> Some links on this page are affiliate links. If you purchase through them, we earn a small commission at no extra cost to you. This never influences our recommendations — we only recommend products we&apos;d use ourselves.
+        </p>
+      </div>
+    </main>
+  )
+}

@@ -26,6 +26,9 @@ export default function Header() {
           <Link href="/tools" className="text-sm text-zinc-400 hover:text-white transition-colors">
             Tools
           </Link>
+          <Link href="/supplements" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Supplements
+          </Link>
           <div className="group relative">
             <button className="flex items-center gap-1 text-sm text-zinc-400 hover:text-white transition-colors">
               Categories
@@ -113,6 +116,13 @@ export default function Header() {
             onClick={() => setMobileOpen(false)}
           >
             Tools
+          </Link>
+          <Link
+            href="/supplements"
+            className="block py-2 text-sm text-zinc-400 hover:text-white"
+            onClick={() => setMobileOpen(false)}
+          >
+            Supplements
           </Link>
           <div className="mt-2 border-t border-zinc-800 pt-2">
             <p className="mb-2 text-xs uppercase tracking-wider text-zinc-600">Categories</p>
