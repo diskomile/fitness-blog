@@ -56,7 +56,21 @@ export default async function DashboardPage() {
             Fitness Tools
           </h2>
           <p className="mt-1 text-sm text-zinc-400">
-            TDEE, macro, and 1RM calculators.
+            9 science-based calculators and tools.
+          </p>
+        </Link>
+
+        {/* Measurements */}
+        <Link
+          href="/measurements"
+          className="group rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition-colors hover:border-orange-500"
+        >
+          <div className="mb-3 text-3xl">📏</div>
+          <h2 className="text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
+            Body Measurements
+          </h2>
+          <p className="mt-1 text-sm text-zinc-400">
+            Track weight, body fat, and body measurements over time.
           </p>
         </Link>
       </div>
