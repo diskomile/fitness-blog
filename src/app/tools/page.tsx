@@ -71,6 +71,27 @@ const tools = [
     icon: '😴',
     badge: 'New',
   },
+  {
+    href: '/tools/bmi-calculator',
+    title: 'BMI Calculator',
+    description: 'Calculate your Body Mass Index with a visual gauge and personalised category advice.',
+    icon: '⚖️',
+    badge: 'New',
+  },
+  {
+    href: '/tools/water-intake',
+    title: 'Water Intake Calculator',
+    description: 'How much water should you drink daily? Get a personalised target and hourly schedule.',
+    icon: '💧',
+    badge: 'New',
+  },
+  {
+    href: '/tools/sleep-calculator',
+    title: 'Sleep Calculator',
+    description: 'Calculate the best times to sleep or wake up based on 90-minute sleep cycles.',
+    icon: '🌙',
+    badge: 'New',
+  },
 ]
 
 export default function ToolsPage() {
