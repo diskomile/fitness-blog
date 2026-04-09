@@ -64,6 +64,13 @@ const tools = [
     icon: '🔄',
     badge: 'New',
   },
+  {
+    href: '/tools/deload-planner',
+    title: 'Deload Week Planner',
+    description: 'Find out if you need a deload and get a full 7-day protocol based on your fatigue and training age.',
+    icon: '😴',
+    badge: 'New',
+  },
 ]
 
 export default function ToolsPage() {
