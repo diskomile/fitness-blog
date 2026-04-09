@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants'
 import { CATEGORIES } from '@/lib/categories'
+import NewsletterForm from '@/components/newsletter/NewsletterForm'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -8,6 +9,10 @@ export default function Footer() {
   return (
     <footer className="border-t border-zinc-800 bg-zinc-950 py-12">
       <div className="mx-auto max-w-6xl px-4">
+        {/* Newsletter strip */}
+        <div className="mb-12">
+          <NewsletterForm variant="inline" />
+        </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-2">

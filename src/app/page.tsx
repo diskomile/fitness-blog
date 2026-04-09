@@ -2,6 +2,7 @@ import { getFeaturedPosts } from '@/lib/posts'
 import HeroSection from '@/components/home/HeroSection'
 import FeaturedPosts from '@/components/home/FeaturedPosts'
 import CategoryGrid from '@/components/home/CategoryGrid'
+import NewsletterForm from '@/components/newsletter/NewsletterForm'
 
 export default function HomePage() {
   const featured = getFeaturedPosts(6)
@@ -11,6 +12,9 @@ export default function HomePage() {
       <HeroSection />
       <FeaturedPosts posts={featured} />
       <CategoryGrid />
+      <section className="mx-auto max-w-2xl px-4 py-16">
+        <NewsletterForm />
+      </section>
     </>
   )
 }
