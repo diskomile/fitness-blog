@@ -2,11 +2,13 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { useUser, UserButton, SignInButton } from '@clerk/nextjs'
 import { SITE_NAME } from '@/lib/constants'
 import { CATEGORIES } from '@/lib/categories'
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { isSignedIn } = useUser()
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur-sm">
@@ -20,6 +22,9 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           <Link href="/blog" className="text-sm text-zinc-400 hover:text-white transition-colors">
             Articles
+          </Link>
+          <Link href="/tools" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Tools
           </Link>
           <div className="group relative">
             <button className="flex items-center gap-1 text-sm text-zinc-400 hover:text-white transition-colors">
@@ -51,6 +56,24 @@ export default function Header() {
               ))}
             </div>
           </div>
+          {/* Auth */}
+          {isSignedIn ? (
+            <div className="flex items-center gap-3">
+              <Link
+                href="/dashboard"
+                className="text-sm text-zinc-400 hover:text-white transition-colors"
+              >
+                Dashboard
+              </Link>
+              <UserButton />
+            </div>
+          ) : (
+            <SignInButton mode="modal">
+              <button className="rounded-lg bg-orange-500 px-4 py-1.5 text-sm font-semibold text-white hover:bg-orange-400 transition-colors">
+                Sign In
+              </button>
+            </SignInButton>
+          )}
         </nav>
 
         {/* Mobile hamburger */}
@@ -84,6 +107,13 @@ export default function Header() {
           >
             Articles
           </Link>
+          <Link
+            href="/tools"
+            className="block py-2 text-sm text-zinc-400 hover:text-white"
+            onClick={() => setMobileOpen(false)}
+          >
+            Tools
+          </Link>
           <div className="mt-2 border-t border-zinc-800 pt-2">
             <p className="mb-2 text-xs uppercase tracking-wider text-zinc-600">Categories</p>
             {CATEGORIES.map((cat) => (
@@ -96,6 +126,26 @@ export default function Header() {
                 {cat.label}
               </Link>
             ))}
+          </div>
+          <div className="mt-4 border-t border-zinc-800 pt-4">
+            {isSignedIn ? (
+              <div className="flex items-center gap-3">
+                <Link
+                  href="/dashboard"
+                  className="text-sm text-zinc-400 hover:text-white"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Dashboard
+                </Link>
+                <UserButton />
+              </div>
+            ) : (
+              <SignInButton mode="modal">
+                <button className="w-full rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-400 transition-colors">
+                  Sign In
+                </button>
+              </SignInButton>
+            )}
           </div>
         </div>
       )}
