@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CheckoutButton from '@/components/stripe/CheckoutButton'
 
 export const metadata: Metadata = {
   title: 'Pricing — Free & Pro Plans',
@@ -11,26 +12,21 @@ const freeFeatures = [
   { label: 'Full blog access (new articles every 2 days)', included: true },
   { label: 'Gym Calendar — track sessions & streak', included: true },
   { label: '6 goal-based workout plans', included: true },
-  { label: '3 exercises per workout day', included: true },
+  { label: 'Workout logger — track weights & reps', included: true },
   { label: 'Body measurement tracker', included: true },
   { label: 'Supplement comparison guides', included: true },
   { label: 'Newsletter', included: true },
-  { label: 'Workout log (weights & reps)', included: false },
-  { label: 'Mood & muscle group tracking', included: false },
-  { label: '15+ exercises per day with video GIFs', included: false },
   { label: 'Progress graphs & analytics', included: false },
+  { label: 'AI-powered personalised training tips', included: false },
   { label: 'PDF workout export', included: false },
-  { label: 'AI-powered training tips', included: false },
+  { label: 'Priority support', included: false },
 ]
 
 const proFeatures = [
   { label: 'Everything in Free', included: true },
-  { label: 'Workout log — track weights, sets & reps', included: true },
-  { label: 'Mood & muscle group tracking per session', included: true },
-  { label: '15+ exercises per day with video GIFs', included: true },
   { label: 'Progress graphs & analytics', included: true },
-  { label: 'PDF workout export', included: true },
   { label: 'AI-powered personalised training tips', included: true },
+  { label: 'PDF workout export', included: true },
   { label: 'Priority support', included: true },
 ]
 
@@ -42,7 +38,7 @@ export default function PricingPage() {
           Simple, <span className="text-orange-400">Honest</span> Pricing
         </h1>
         <p className="mt-3 text-lg text-zinc-400">
-          Most features are completely free. Upgrade for the full experience.
+          Most features are completely free. Upgrade for analytics, AI tips, and exports.
         </p>
       </div>
 
@@ -54,8 +50,10 @@ export default function PricingPage() {
             <p className="mt-2 text-5xl font-extrabold text-white">€0</p>
             <p className="mt-1 text-zinc-500">No credit card required</p>
           </div>
-          <Link href="/sign-up"
-            className="mb-8 block w-full rounded-xl border border-zinc-700 py-3 text-center text-sm font-bold text-white hover:border-zinc-500 transition-colors">
+          <Link
+            href="/sign-up"
+            className="mb-8 block w-full rounded-xl border border-zinc-700 py-3 text-center text-sm font-bold text-white hover:border-zinc-500 transition-colors"
+          >
             Get Started Free →
           </Link>
           <ul className="space-y-3">
@@ -87,10 +85,7 @@ export default function PricingPage() {
             </div>
             <p className="mt-1 text-zinc-500">Cancel anytime</p>
           </div>
-          <button disabled
-            className="mb-8 block w-full rounded-xl bg-orange-500 py-3 text-center text-sm font-bold text-white opacity-60 cursor-not-allowed">
-            Coming Soon
-          </button>
+          <CheckoutButton />
           <ul className="space-y-3">
             {proFeatures.map((f) => (
               <li key={f.label} className="flex items-start gap-3">
@@ -109,10 +104,10 @@ export default function PricingPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {[
-            { q: 'Is the free plan really free forever?', a: 'Yes. The core blog, calculators, gym calendar, and workout plans are permanently free. No hidden fees, no time limits.' },
-            { q: 'When will Pro launch?', a: 'We\'re currently building Pro features. Sign up free now and you\'ll be notified when Pro launches.' },
-            { q: 'What payment methods will you accept?', a: 'Credit/debit cards and major European payment methods via Stripe.' },
-            { q: 'Can I cancel anytime?', a: 'Yes. Cancel with one click from your dashboard. You\'ll keep access until the end of your billing period.' },
+            { q: 'Is the free plan really free forever?', a: 'Yes. The core blog, calculators, gym calendar, workout plans, and workout logger are permanently free. No hidden fees, no time limits.' },
+            { q: 'What does Pro add?', a: 'Pro unlocks progress graphs, AI-powered training tips based on your data, PDF export of your workouts, and priority support.' },
+            { q: 'What payment methods do you accept?', a: 'Credit/debit cards and major European payment methods via Stripe. Fully secure checkout.' },
+            { q: 'Can I cancel anytime?', a: 'Yes. Cancel with one click from your dashboard. You will keep access until the end of your billing period.' },
           ].map(({ q, a }) => (
             <div key={q} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5">
               <p className="font-semibold text-white">{q}</p>
