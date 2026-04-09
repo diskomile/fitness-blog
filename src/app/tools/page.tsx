@@ -57,6 +57,13 @@ const tools = [
     icon: '💊',
     badge: 'New',
   },
+  {
+    href: '/tools/exercise-substitution',
+    title: 'Exercise Substitution',
+    description: 'No barbell, injury, or home gym only? Find the best substitute for any exercise instantly.',
+    icon: '🔄',
+    badge: 'New',
+  },
 ]
 
 export default function ToolsPage() {
