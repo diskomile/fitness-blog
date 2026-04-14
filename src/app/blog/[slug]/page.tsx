@@ -9,6 +9,7 @@ import AffiliateBox from '@/components/mdx/AffiliateBox'
 import ProTip from '@/components/mdx/ProTip'
 import CategoryBadge from '@/components/blog/CategoryBadge'
 import FtcDisclosure from '@/components/blog/FtcDisclosure'
+import ArticleSchema from '@/components/seo/ArticleSchema'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -56,6 +57,13 @@ export default async function PostPage({
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
+      <ArticleSchema
+        title={post.title}
+        description={post.description ?? ''}
+        slug={post.slug}
+        date={post.date}
+        tags={post.tags}
+      />
       <header className="mb-10">
         <div className="mb-4 flex items-center gap-3">
           <CategoryBadge category={post.category} />
