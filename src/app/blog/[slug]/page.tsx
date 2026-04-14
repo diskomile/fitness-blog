@@ -11,6 +11,7 @@ import FtcDisclosure from '@/components/blog/FtcDisclosure'
 import ArticleSchema from '@/components/seo/ArticleSchema'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar'
+import ShareButtons from '@/components/blog/ShareButtons'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -56,6 +57,8 @@ export default async function PostPage({
 
   const related = getRelatedPosts(slug, post.category)
 
+  const postUrl = `${SITE_URL}/blog/${post.slug}`
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
       <ReadingProgressBar />
@@ -66,8 +69,19 @@ export default async function PostPage({
         date={post.date}
         tags={post.tags}
       />
+      {/* Breadcrumbs */}
+      <nav className="mb-8 flex items-center gap-2 text-xs text-zinc-500" aria-label="Breadcrumb">
+        <a href="/" className="hover:text-zinc-300 transition-colors">Home</a>
+        <span>/</span>
+        <a href="/blog" className="hover:text-zinc-300 transition-colors">Blog</a>
+        <span>/</span>
+        <a href={`/category/${post.category}`} className="capitalize hover:text-zinc-300 transition-colors">{post.category.replace('-', ' ')}</a>
+        <span>/</span>
+        <span className="text-zinc-400 truncate max-w-[200px]">{post.title}</span>
+      </nav>
+
       <header className="mb-10">
-        <div className="mb-4 flex items-center gap-3">
+        <div className="mb-4 flex flex-wrap items-center gap-3">
           <CategoryBadge category={post.category} />
           <span className="text-sm text-zinc-500">
             {new Date(post.date).toLocaleDateString('en-US', {
@@ -88,6 +102,9 @@ export default async function PostPage({
         {post.description && (
           <p className="mt-4 text-lg text-zinc-400">{post.description}</p>
         )}
+        <div className="mt-5">
+          <ShareButtons title={post.title} url={postUrl} />
+        </div>
       </header>
 
       <FtcDisclosure />
@@ -102,6 +119,10 @@ export default async function PostPage({
             },
           }}
         />
+      </div>
+
+      <div className="mt-10 border-t border-zinc-800 pt-6">
+        <ShareButtons title={post.title} url={postUrl} />
       </div>
 
       <RelatedPosts posts={related} />
