@@ -88,7 +88,7 @@ def generate_article(
             {"role": "user", "content": prompt},
         ],
         temperature=0.72,
-        max_tokens=4096,
+        max_tokens=8192,
     )
     return response.choices[0].message.content.strip()
 

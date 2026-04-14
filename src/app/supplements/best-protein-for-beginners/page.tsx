@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import FaqSchema from '@/components/seo/FaqSchema'
 
 export const metadata: Metadata = {
   title: 'Best Protein Powder for Beginners 2026 — Simple Options Under €30',
@@ -138,6 +139,7 @@ const faqs = [
 export default function BestProteinForBeginnersPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-12">
+      <FaqSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
       <Link href="/supplements" className="mb-6 inline-flex items-center gap-1 text-sm text-zinc-400 hover:text-white transition-colors">
         ← All Comparisons
       </Link>

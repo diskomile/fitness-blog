@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CheckoutButton from '@/components/stripe/CheckoutButton'
+import FaqSchema from '@/components/seo/FaqSchema'
 
 export const metadata: Metadata = {
   title: 'Pricing — Free & Pro Plans',
@@ -30,9 +31,17 @@ const proFeatures = [
   { label: 'Priority support', included: true },
 ]
 
+const pricingFaqs = [
+  { question: 'Is the free plan really free forever?', answer: 'Yes. The core blog, calculators, gym calendar, workout plans, workout logger, and body measurement tracker are permanently free. No hidden fees, no time limits.' },
+  { question: 'What does Pro add?', answer: 'Pro unlocks progress graphs, AI-powered training tips based on your data, PDF export of your workouts, and priority support.' },
+  { question: 'What payment methods do you accept?', answer: 'Credit and debit cards and major European payment methods. Fully secure checkout.' },
+  { question: 'Can I cancel anytime?', answer: 'Yes. Cancel with one click from your dashboard. You will keep access until the end of your billing period.' },
+]
+
 export default function PricingPage() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-16">
+      <FaqSchema faqs={pricingFaqs} />
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-extrabold text-white">
           Simple, <span className="text-orange-400">Honest</span> Pricing
