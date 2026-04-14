@@ -28,8 +28,16 @@ export default function Footer() {
     <footer className="border-t border-zinc-800 bg-zinc-950 py-14">
       <div className="mx-auto max-w-6xl px-4">
         {/* Newsletter strip */}
-        <div className="mb-12">
-          <NewsletterForm variant="inline" />
+        <div className="mb-12 rounded-2xl border border-orange-500/20 bg-orange-500/5 px-6 py-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-bold text-white">Get evidence-based fitness tips</p>
+              <p className="text-sm text-zinc-400">Supplement reviews, workout guides & tool updates. Twice a week. Free.</p>
+            </div>
+            <div className="sm:w-80 shrink-0">
+              <NewsletterForm variant="inline" />
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
