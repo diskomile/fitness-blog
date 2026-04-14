@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation'
 import { getMeasurements } from './actions'
 import MeasurementForm from '@/components/measurements/MeasurementForm'
 import MeasurementHistory from '@/components/measurements/MeasurementHistory'
+import BodyWeightChart from '@/components/charts/BodyWeightChart'
 
 export const metadata = { title: 'Body Measurements' }
 
@@ -11,6 +12,12 @@ export default async function MeasurementsPage() {
   if (!user) redirect('/sign-in')
 
   const measurements = await getMeasurements()
+
+  const weightData = measurements.map((m) => ({
+    date: m.measured_at,
+    weight: m.weight_kg,
+    bodyFat: m.body_fat_pct,
+  }))
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
@@ -24,6 +31,7 @@ export default async function MeasurementsPage() {
       </div>
 
       <div className="space-y-6">
+        {weightData.length >= 2 && <BodyWeightChart data={weightData} />}
         <MeasurementForm />
         <MeasurementHistory measurements={measurements} />
       </div>

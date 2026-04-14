@@ -182,6 +182,13 @@ export default async function DashboardPage() {
                 cta: 'Add Measurement',
               },
               {
+                href: '/progress',
+                emoji: '📊',
+                title: 'Progress Charts',
+                desc: 'Visualise strength gains and body weight trends over time.',
+                cta: 'View Progress',
+              },
+              {
                 href: '/tools',
                 emoji: '🧮',
                 title: 'Fitness Tools',
