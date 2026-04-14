@@ -34,7 +34,7 @@ const proFeatures = [
 const pricingFaqs = [
   { question: 'Is the free plan really free forever?', answer: 'Yes. The core blog, calculators, gym calendar, workout plans, workout logger, and body measurement tracker are permanently free. No hidden fees, no time limits.' },
   { question: 'What does Pro add?', answer: 'Pro unlocks progress graphs, AI-powered training tips based on your data, PDF export of your workouts, and priority support.' },
-  { question: 'What payment methods do you accept?', answer: 'Credit and debit cards and major European payment methods. Fully secure checkout.' },
+  { question: 'What payment methods do you accept?', answer: 'Credit and debit cards, and major European payment methods. Fully secure checkout via our payment partner.' },
   { question: 'Can I cancel anytime?', answer: 'Yes. Cancel with one click from your dashboard. You will keep access until the end of your billing period.' },
 ]
 
@@ -115,7 +115,7 @@ export default function PricingPage() {
           {[
             { q: 'Is the free plan really free forever?', a: 'Yes. The core blog, calculators, gym calendar, workout plans, and workout logger are permanently free. No hidden fees, no time limits.' },
             { q: 'What does Pro add?', a: 'Pro unlocks progress graphs, AI-powered training tips based on your data, PDF export of your workouts, and priority support.' },
-            { q: 'What payment methods do you accept?', a: 'Credit/debit cards and major European payment methods via Stripe. Fully secure checkout.' },
+            { q: 'What payment methods do you accept?', a: 'Credit/debit cards and major European payment methods. Fully secure checkout.' },
             { q: 'Can I cancel anytime?', a: 'Yes. Cancel with one click from your dashboard. You will keep access until the end of your billing period.' },
           ].map(({ q, a }) => (
             <div key={q} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5">
