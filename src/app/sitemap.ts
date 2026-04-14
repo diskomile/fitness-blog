@@ -20,6 +20,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  const toolSlugs = [
+    'tdee-calculator',
+    'macro-calculator',
+    'one-rep-max-calculator',
+    'strength-standards',
+    'heart-rate-zones',
+    'bulk-cut-timeline',
+    'supplement-timing',
+    'exercise-substitution',
+    'deload-planner',
+    'bmi-calculator',
+    'water-intake',
+    'sleep-calculator',
+  ]
+
+  const toolEntries: MetadataRoute.Sitemap = toolSlugs.map((slug) => ({
+    url: `${SITE_URL}/tools/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  const supplementSlugs = [
+    'best-whey-protein',
+    'best-creatine',
+    'best-pre-workout',
+    'best-protein-for-beginners',
+  ]
+
+  const supplementEntries: MetadataRoute.Sitemap = supplementSlugs.map((slug) => ({
+    url: `${SITE_URL}/supplements/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
   return [
     {
       url: SITE_URL,
@@ -33,7 +69,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/tools`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/supplements`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/pricing`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     ...categoryEntries,
+    ...toolEntries,
+    ...supplementEntries,
     ...postEntries,
   ]
 }
