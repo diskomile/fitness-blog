@@ -13,6 +13,7 @@ import ArticleSchema from '@/components/seo/ArticleSchema'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar'
 import ShareButtons from '@/components/blog/ShareButtons'
+import TableOfContents from '@/components/blog/TableOfContents'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -58,11 +59,21 @@ export default async function PostPage({
   if (!post) notFound()
 
   const related = getRelatedPosts(slug, post.category)
-
   const postUrl = `${SITE_URL}/blog/${post.slug}`
 
+  // Extract headings for Table of Contents
+  const headingRegex = /^(#{2,3})\s+(.+)$/gm
+  const headings: { text: string; id: string; level: 2 | 3 }[] = []
+  let match
+  while ((match = headingRegex.exec(post.content)) !== null) {
+    const level = match[1].length as 2 | 3
+    const text = match[2].replace(/\*\*/g, '').replace(/`/g, '')
+    const id = text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
+    headings.push({ text, id, level })
+  }
+
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12">
+    <div className="mx-auto max-w-6xl px-4 py-12">
       <ReadingProgressBar />
       <ArticleSchema
         title={post.title}
@@ -82,52 +93,66 @@ export default async function PostPage({
         <span className="text-zinc-400 truncate max-w-[200px]">{post.title}</span>
       </nav>
 
-      <header className="mb-10">
-        <div className="mb-4 flex flex-wrap items-center gap-3">
-          <CategoryBadge category={post.category} />
-          <span className="text-sm text-zinc-500">
-            {new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            })}
-          </span>
-          {post.readingTime && (
-            <span className="text-sm text-zinc-500">
-              · {post.readingTime} min read
-            </span>
-          )}
-        </div>
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
-          {post.title}
-        </h1>
-        {post.description && (
-          <p className="mt-4 text-lg text-zinc-400">{post.description}</p>
+      <div className="flex gap-12">
+        {/* Main article */}
+        <article className="min-w-0 flex-1">
+          <header className="mb-10">
+            <div className="mb-4 flex flex-wrap items-center gap-3">
+              <CategoryBadge category={post.category} />
+              <span className="text-sm text-zinc-500">
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </span>
+              {post.readingTime && (
+                <span className="text-sm text-zinc-500">
+                  · {post.readingTime} min read
+                </span>
+              )}
+            </div>
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
+              {post.title}
+            </h1>
+            {post.description && (
+              <p className="mt-4 text-lg text-zinc-400">{post.description}</p>
+            )}
+            <div className="mt-5">
+              <ShareButtons title={post.title} url={postUrl} />
+            </div>
+          </header>
+
+          <FtcDisclosure />
+
+          <div className="prose prose-invert prose-orange max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-orange-400 prose-strong:text-white prose-code:text-orange-300 prose-th:text-white prose-td:text-zinc-300">
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+              options={{
+                mdxOptions: {
+                  remarkPlugins: [remarkGfm],
+                },
+              }}
+            />
+          </div>
+
+          <div className="mt-10 border-t border-zinc-800 pt-6">
+            <ShareButtons title={post.title} url={postUrl} />
+          </div>
+
+          <RelatedPosts posts={related} />
+        </article>
+
+        {/* ToC sidebar — desktop only */}
+        {headings.length >= 3 && (
+          <aside className="hidden xl:block w-56 shrink-0">
+            <div className="sticky top-24">
+              <TableOfContents headings={headings} />
+            </div>
+          </aside>
         )}
-        <div className="mt-5">
-          <ShareButtons title={post.title} url={postUrl} />
-        </div>
-      </header>
-
-      <FtcDisclosure />
-
-      <div className="prose prose-invert prose-orange max-w-none prose-headings:font-bold prose-headings:text-white prose-a:text-orange-400 prose-strong:text-white prose-code:text-orange-300 prose-th:text-white prose-td:text-zinc-300">
-        <MDXRemote
-          source={post.content}
-          components={mdxComponents}
-          options={{
-            mdxOptions: {
-              remarkPlugins: [remarkGfm],
-            },
-          }}
-        />
       </div>
-
-      <div className="mt-10 border-t border-zinc-800 pt-6">
-        <ShareButtons title={post.title} url={postUrl} />
-      </div>
-
-      <RelatedPosts posts={related} />
-    </article>
+    </div>
   )
 }
