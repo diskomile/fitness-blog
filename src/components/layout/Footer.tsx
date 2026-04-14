@@ -8,8 +8,8 @@ const supplementLinks = [
   { href: '/supplements/best-creatine', label: 'Best Creatine' },
   { href: '/supplements/best-pre-workout', label: 'Best Pre-Workout' },
   { href: '/supplements/best-omega-3-fish-oil', label: 'Best Omega-3' },
-  { href: '/supplements/best-multivitamin', label: 'Best Multivitamin' },
-  { href: '/supplements/best-protein-for-beginners', label: 'Protein for Beginners' },
+  { href: '/supplements/best-zma-magnesium', label: 'Best ZMA & Magnesium' },
+  { href: '/supplements/best-fat-burner', label: 'Best Fat Burner' },
 ]
 
 const toolLinks = [

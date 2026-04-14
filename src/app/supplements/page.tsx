@@ -47,6 +47,20 @@ const comparisons = [
     title: 'Best Multivitamin for Athletes',
     description: 'The form of each vitamin matters more than the dose. Here is what to actually look for.',
     icon: '💊',
+    badge: null,
+  },
+  {
+    href: '/supplements/best-zma-magnesium',
+    title: 'Best ZMA & Magnesium Supplements',
+    description: 'Magnesium oxide absorbs at 4%. We compare bisglycinate and glycinate products that actually replenish what training depletes.',
+    icon: '🌙',
+    badge: 'New',
+  },
+  {
+    href: '/supplements/best-fat-burner',
+    title: 'Best Fat Burner Supplements',
+    description: 'Honest reviews of fat burners that use evidence-backed ingredients at safe doses — no DNP, no ephedrine, no hype.',
+    icon: '🔥',
     badge: 'New',
   },
 ]

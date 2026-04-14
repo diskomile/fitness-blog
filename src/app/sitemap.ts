@@ -49,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'best-protein-for-beginners',
     'best-omega-3-fish-oil',
     'best-multivitamin',
+    'best-zma-magnesium',
+    'best-fat-burner',
   ]
 
   const supplementEntries: MetadataRoute.Sitemap = supplementSlugs.map((slug) => ({
