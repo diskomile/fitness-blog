@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import CheckoutButton from '@/components/stripe/CheckoutButton'
 import FaqSchema from '@/components/seo/FaqSchema'
 
 export const metadata: Metadata = {
@@ -94,7 +93,12 @@ export default function PricingPage() {
             </div>
             <p className="mt-1 text-zinc-500">Cancel anytime</p>
           </div>
-          <CheckoutButton />
+          <button
+            disabled
+            className="mb-8 block w-full rounded-xl bg-orange-500 py-3 text-center text-sm font-bold text-white opacity-60 cursor-not-allowed"
+          >
+            Coming Soon — Payment Setup in Progress
+          </button>
           <ul className="space-y-3">
             {proFeatures.map((f) => (
               <li key={f.label} className="flex items-start gap-3">
