@@ -6,6 +6,7 @@ import { getAllSlugs, getPostBySlug, getRelatedPosts } from '@/lib/posts'
 import { SITE_URL } from '@/lib/constants'
 import AffiliateBox from '@/components/mdx/AffiliateBox'
 import ProTip from '@/components/mdx/ProTip'
+import NewsletterCTA from '@/components/mdx/NewsletterCTA'
 import CategoryBadge from '@/components/blog/CategoryBadge'
 import FtcDisclosure from '@/components/blog/FtcDisclosure'
 import ArticleSchema from '@/components/seo/ArticleSchema'
@@ -44,6 +45,7 @@ export async function generateMetadata({
 const mdxComponents = {
   AffiliateBox,
   ProTip,
+  NewsletterCTA,
 }
 
 export default async function PostPage({

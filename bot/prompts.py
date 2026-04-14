@@ -18,7 +18,7 @@ Output format rules:
 1. Output ONLY valid MDX — no explanations, no code fences around the whole article
 2. Start with YAML frontmatter wrapped in ---
 3. Use the exact frontmatter field names specified
-4. Do NOT include JSX imports at the top — AffiliateBox and ProTip are globally available
+4. Do NOT include JSX imports at the top — AffiliateBox, ProTip, and NewsletterCTA are globally available
 5. Use GFM tables (| col | col |) for product comparisons
 6. Use <AffiliateBox> components AFTER relevant H2 sections, not at the very top
 7. Use <ProTip> for expert insights worth highlighting
@@ -88,6 +88,7 @@ Article requirements:
 
 - Include at least one GFM comparison table if reviewing multiple products
 - Use <ProTip> for 2-3 genuinely useful expert insights
+- Insert exactly one <NewsletterCTA /> component roughly halfway through the article (after 3rd or 4th H2 section)
 - Include a ## Frequently Asked Questions section near the end with 4-6 Q&A pairs
 - End with a practical conclusion paragraph (no "as a conclusion" phrasing)
 - Target length: 2500-3500 words — be thorough and detailed
