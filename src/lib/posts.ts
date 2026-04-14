@@ -83,3 +83,13 @@ export function getPaginatedPosts(page: number): {
 export function getFeaturedPosts(count: number): PostMeta[] {
   return getAllPostsMeta().slice(0, count)
 }
+
+export function getRelatedPosts(currentSlug: string, category: string, count = 3): PostMeta[] {
+  const all = getAllPostsMeta()
+  // Same category, excluding current post
+  const sameCat = all.filter((p) => p.category === category && p.slug !== currentSlug)
+  if (sameCat.length >= count) return sameCat.slice(0, count)
+  // Fill remaining with latest posts from other categories
+  const others = all.filter((p) => p.category !== category && p.slug !== currentSlug)
+  return [...sameCat, ...others].slice(0, count)
+}

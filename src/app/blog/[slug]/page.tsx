@@ -2,14 +2,15 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import { getAllSlugs, getPostBySlug } from '@/lib/posts'
+import { getAllSlugs, getPostBySlug, getRelatedPosts } from '@/lib/posts'
 import { SITE_URL } from '@/lib/constants'
-import { getCategoryBySlug, getCategoryColor } from '@/lib/categories'
 import AffiliateBox from '@/components/mdx/AffiliateBox'
 import ProTip from '@/components/mdx/ProTip'
 import CategoryBadge from '@/components/blog/CategoryBadge'
 import FtcDisclosure from '@/components/blog/FtcDisclosure'
 import ArticleSchema from '@/components/seo/ArticleSchema'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import ReadingProgressBar from '@/components/blog/ReadingProgressBar'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -53,10 +54,11 @@ export default async function PostPage({
   const post = getPostBySlug(slug)
   if (!post) notFound()
 
-  const category = getCategoryBySlug(post.category)
+  const related = getRelatedPosts(slug, post.category)
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
+      <ReadingProgressBar />
       <ArticleSchema
         title={post.title}
         description={post.description ?? ''}
@@ -101,6 +103,8 @@ export default async function PostPage({
           }}
         />
       </div>
+
+      <RelatedPosts posts={related} />
     </article>
   )
 }
