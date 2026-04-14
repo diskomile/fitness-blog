@@ -75,7 +75,7 @@ const products: Product[] = [
     pros: ['Industry gold standard for 20+ years', 'Incredible mixability', 'Third-party tested', 'Available everywhere'],
     cons: ['Most expensive on the list', 'Same protein % as cheaper options'],
     verdict: 'The most trusted whey in the world. You\'re paying a premium for the brand and consistency. Great if you want zero risk — but objectively not the best value.',
-    affiliateUrl: 'https://www.amazon.com/s?k=optimum+nutrition+gold+standard+whey&tag=ironpulse08-20',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=optimum+nutrition+gold+standard+whey&tag=ironpulse02-21',
     score: 8,
   },
   {
@@ -103,7 +103,7 @@ const products: Product[] = [
     pros: ['Popular in Eastern Europe', 'Wide flavour range', 'Good availability'],
     cons: ['Proprietary blend concerns', 'Inconsistent quality across batches'],
     verdict: 'A popular choice in Eastern European markets. Decent option but lacks the transparency of Bulk or the value of Myprotein.',
-    affiliateUrl: 'https://www.amazon.com/s?k=scitec+nutrition+whey+protein&tag=ironpulse08-20',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=scitec+nutrition+whey+protein&tag=ironpulse02-21',
     score: 7,
   },
 ]

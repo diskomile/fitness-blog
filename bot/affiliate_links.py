@@ -17,12 +17,10 @@ MYPROTEIN_TAG = os.environ.get("MYPROTEIN_TAG", "")  # Prijava: impact.com → M
 
 
 def build_amazon_search_url(query: str) -> str:
-    """Gradi Amazon search URL koji uvijek radi."""
+    """Gradi Amazon UK search URL koji uvijek radi."""
     encoded = urllib.parse.quote_plus(query)
-    base = f"https://www.amazon.com/s?k={encoded}"
-    if AMAZON_TAG:
-        base += f"&tag={AMAZON_TAG}"
-    return base
+    tag = AMAZON_TAG or "ironpulse02-21"
+    return f"https://www.amazon.co.uk/s?k={encoded}&tag={tag}"
 
 
 def build_myprotein_url(path: str) -> str:

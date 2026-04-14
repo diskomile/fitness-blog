@@ -125,7 +125,7 @@ const products: Product[] = [
       'Expensive for what you get',
     ],
     verdict: "C4 is one of the most popular pre-workouts in the world — and one of the most underdosed. At 1g citrulline you are paying premium prices for sub-effective doses. The energy comes from caffeine. Just drink a coffee instead.",
-    affiliateUrl: 'https://www.amazon.com/s?k=c4+pre+workout&tag=ironpulse08-20',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=c4+pre+workout&tag=ironpulse02-21',
     score: 5,
   },
 ]

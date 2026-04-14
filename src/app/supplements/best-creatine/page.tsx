@@ -70,7 +70,7 @@ const products: Product[] = [
     pros: ['Better solubility in water', 'Smaller dose needed (1–2g vs 5g)', 'Less water retention'],
     cons: ['3–4× more expensive than monohydrate', 'Far less research than monohydrate', 'No proven performance advantage over monohydrate'],
     verdict: 'Marketed aggressively but the science doesn\'t back the premium. A well-designed study showed no significant difference vs monohydrate. Save your money.',
-    affiliateUrl: 'https://www.amazon.com/s?k=creatine+hcl&tag=ironpulse08-20',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=creatine+hcl&tag=ironpulse02-21',
     score: 6,
   },
   {
@@ -83,7 +83,7 @@ const products: Product[] = [
     pros: ['Better absorption claimed by manufacturers'],
     cons: ['Research shows it\'s converted to creatinine (waste product) faster', 'Worse than monohydrate in head-to-head studies', 'Most expensive option', 'No proven benefits'],
     verdict: 'The science is clear: creatine ethyl ester is inferior to monohydrate. A 2009 study showed monohydrate outperformed it significantly. Avoid.',
-    affiliateUrl: 'https://www.amazon.com/s?k=creatine+ethyl+ester&tag=ironpulse08-20',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=creatine+ethyl+ester&tag=ironpulse02-21',
     score: 4,
   },
 ]
