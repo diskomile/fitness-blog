@@ -114,6 +114,7 @@ export default function Footer() {
           <p className="text-xs text-zinc-600">© {year} {SITE_NAME}. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             <Link href="/about" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">About</Link>
+            <Link href="/contact" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Contact</Link>
             <Link href="/privacy" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Privacy</Link>
             <Link href="/terms" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Terms</Link>
             <Link href="/sitemap.xml" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Sitemap</Link>
