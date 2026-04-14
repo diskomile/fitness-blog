@@ -104,9 +104,11 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-zinc-800 pt-6">
           <p className="text-xs text-zinc-600">© {year} {SITE_NAME}. All rights reserved.</p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
+            <Link href="/about" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">About</Link>
+            <Link href="/privacy" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Terms</Link>
             <Link href="/sitemap.xml" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Sitemap</Link>
-            <Link href="/blog" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Blog</Link>
             <Link href="/pricing" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Pricing</Link>
           </div>
         </div>
