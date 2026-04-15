@@ -49,6 +49,9 @@ export default function Header() {
             </div>
           </div>
 
+          <Link href="/deals" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors">
+            Deals 🔥
+          </Link>
           <Link href="/pricing" className="text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors">
             Pricing
           </Link>

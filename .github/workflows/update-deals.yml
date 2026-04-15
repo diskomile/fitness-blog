@@ -1,12 +1,12 @@
-name: Article Generation
+name: Update Deals
 
 on:
   schedule:
-    - cron: '0 8 */2 * *'  # Svaki drugi dan u 8:00 AM UTC
-  workflow_dispatch:      # Allow manual trigger from GitHub UI
+    - cron: '0 7 */3 * *'  # Every 3 days at 7:00 AM UTC
+  workflow_dispatch:        # Allow manual trigger from GitHub UI
 
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -31,10 +31,10 @@ jobs:
           git config user.name "BurnLab Bot"
           git config user.email "bot@burnlab.co.uk"
 
-      - name: Generate and publish article
+      - name: Update deals
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
         run: |
           cd bot
-          python generate_article.py
+          python update_deals.py
