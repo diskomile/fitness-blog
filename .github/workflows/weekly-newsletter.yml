@@ -1,0 +1,31 @@
+name: Weekly Newsletter
+
+on:
+  schedule:
+    - cron: '0 9 * * 6'  # Every Saturday at 9:00 AM UTC
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r bot/requirements.txt && pip install requests pyyaml
+
+      - name: Send weekly newsletter
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+        run: |
+          cd bot
+          python send_newsletter.py
