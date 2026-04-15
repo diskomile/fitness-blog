@@ -66,7 +66,7 @@ export default function PrivacyPage() {
         <h2>Your Rights</h2>
         <p>
           Depending on your location, you may have the right to access, correct, or delete your personal data. To exercise these rights, contact us at{' '}
-          <a href="mailto:hello@ironpulse.fit">hello@ironpulse.fit</a>.
+          <a href="mailto:hello@burnlab.co.uk">hello@burnlab.co.uk</a>.
         </p>
 
         <h2>Children</h2>
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
         <h2>Contact</h2>
         <p>
           If you have questions about this Privacy Policy, contact us at{' '}
-          <a href="mailto:hello@ironpulse.fit">hello@ironpulse.fit</a>.
+          <a href="mailto:hello@burnlab.co.uk">hello@burnlab.co.uk</a>.
         </p>
       </div>
     </main>

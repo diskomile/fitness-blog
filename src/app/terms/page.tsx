@@ -61,7 +61,7 @@ export default function TermsPage() {
         <h2>Contact</h2>
         <p>
           For questions about these Terms, contact us at{' '}
-          <a href="mailto:hello@ironpulse.fit">hello@ironpulse.fit</a>.
+          <a href="mailto:hello@burnlab.co.uk">hello@burnlab.co.uk</a>.
         </p>
       </div>
     </main>

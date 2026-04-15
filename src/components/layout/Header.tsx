@@ -15,7 +15,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         {/* Logo */}
         <Link href="/" className="text-xl font-extrabold text-white hover:text-orange-400 transition-colors">
-          <span className="text-orange-400">Iron</span>Pulse
+          <span className="text-orange-400">Burn</span>Lab
         </Link>
 
         {/* Desktop nav */}

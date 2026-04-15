@@ -3,20 +3,20 @@ import Link from 'next/link'
 import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About IronPulse Fitness',
+  title: 'About BurnLab',
   description: `Learn about ${SITE_NAME} — our mission, editorial standards, and the team behind the evidence-based fitness content.`,
 }
 
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
-      <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">About IronPulse</h1>
+      <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">About BurnLab</h1>
       <p className="mb-8 text-lg text-zinc-400">{SITE_DESCRIPTION}</p>
 
       <div className="prose prose-invert prose-orange max-w-none prose-headings:text-white prose-a:text-orange-400">
         <h2>Our Mission</h2>
         <p>
-          IronPulse exists because fitness information on the internet is overwhelmingly bad. Too much of it is anecdote dressed up as science, supplement marketing disguised as advice, and clickbait that wastes your time.
+          BurnLab exists because fitness information on the internet is overwhelmingly bad. Too much of it is anecdote dressed up as science, supplement marketing disguised as advice, and clickbait that wastes your time.
         </p>
         <p>
           We write articles grounded in peer-reviewed research and practical experience. Every recommendation we make is one we&apos;d give to a friend — honest about limitations, clear about tradeoffs, and never influenced by who&apos;s paying us.
@@ -33,7 +33,7 @@ export default function AboutPage() {
 
         <h2>Editorial Standards</h2>
         <p>
-          Every article on IronPulse goes through a consistent process:
+          Every article on BurnLab goes through a consistent process:
         </p>
         <ul>
           <li>Claims are tied to primary research where possible, not just other fitness blogs</li>
@@ -44,7 +44,7 @@ export default function AboutPage() {
 
         <h2>Affiliate Disclosure</h2>
         <p>
-          IronPulse participates in affiliate programs, including the Amazon Associates programme. When you click a product link and make a purchase, we may earn a small commission at no additional cost to you. This helps fund the site and keeps all tools and content free.
+          BurnLab participates in affiliate programs, including the Amazon Associates programme. When you click a product link and make a purchase, we may earn a small commission at no additional cost to you. This helps fund the site and keeps all tools and content free.
         </p>
         <p>
           Our affiliate relationships do not influence our editorial recommendations. We recommend products we believe are genuinely good, and we note when we find better value elsewhere.

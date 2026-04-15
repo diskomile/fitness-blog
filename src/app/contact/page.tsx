@@ -21,10 +21,10 @@ export default function ContactPage() {
             Found an error in an article, or want to suggest a topic? We take accuracy seriously.
           </p>
           <a
-            href="mailto:editorial@ironpulse.fit"
+            href="mailto:editorial@burnlab.co.uk"
             className="text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors"
           >
-            editorial@ironpulse.fit
+            editorial@burnlab.co.uk
           </a>
         </div>
 
@@ -34,10 +34,10 @@ export default function ContactPage() {
             Interested in sponsoring content or setting up an affiliate partnership? Get in touch with details about your product.
           </p>
           <a
-            href="mailto:partnerships@ironpulse.fit"
+            href="mailto:partnerships@burnlab.co.uk"
             className="text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors"
           >
-            partnerships@ironpulse.fit
+            partnerships@burnlab.co.uk
           </a>
         </div>
 
@@ -47,10 +47,10 @@ export default function ContactPage() {
             Everything else — account issues, feedback, or just saying hello.
           </p>
           <a
-            href="mailto:hello@ironpulse.fit"
+            href="mailto:hello@burnlab.co.uk"
             className="text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors"
           >
-            hello@ironpulse.fit
+            hello@burnlab.co.uk
           </a>
         </div>
       </div>

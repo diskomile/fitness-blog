@@ -294,7 +294,7 @@ export default function BestZmaMagnesiumPage() {
 
       {/* Disclosure */}
       <p className="rounded-xl border border-zinc-800 bg-zinc-900/60 px-5 py-4 text-xs leading-relaxed text-zinc-500">
-        <span className="font-semibold text-zinc-400">Affiliate Disclosure:</span> IronPulse participates in affiliate programmes.
+        <span className="font-semibold text-zinc-400">Affiliate Disclosure:</span> BurnLab participates in affiliate programmes.
         Some links on this page are affiliate links and we may earn a commission if you purchase through them, at no extra cost to you.
         All products are independently reviewed; commissions do not influence our recommendations.
       </p>

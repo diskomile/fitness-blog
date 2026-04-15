@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="text-xl font-extrabold text-white hover:text-orange-400 transition-colors">
-              <span className="text-orange-400">Iron</span>Pulse
+              <span className="text-orange-400">Burn</span>Lab
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-zinc-500">{SITE_DESCRIPTION}</p>
             <div className="mt-5 flex gap-4">

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { getPostBySlug } from '@/lib/posts'
 
-export const alt = 'IronPulse Fitness Article'
+export const alt = 'BurnLab Fitness Article'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -18,7 +18,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params
   const post = getPostBySlug(slug)
 
-  const title = post?.title ?? 'IronPulse Fitness Article'
+  const title = post?.title ?? 'BurnLab Fitness Article'
   const category = post?.category ?? 'fitness'
   const accentColor = categoryColors[category] ?? '#f97316'
 
@@ -66,8 +66,8 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         {/* Top: logo + category */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', zIndex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <span style={{ fontSize: 28, fontWeight: 900, color: '#f97316' }}>Iron</span>
-            <span style={{ fontSize: 28, fontWeight: 900, color: '#ffffff' }}>Pulse</span>
+            <span style={{ fontSize: 28, fontWeight: 900, color: '#f97316' }}>Burn</span>
+            <span style={{ fontSize: 28, fontWeight: 900, color: '#ffffff' }}>Lab</span>
           </div>
           <div
             style={{
@@ -103,7 +103,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         {/* Bottom: url */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 1 }}>
           <div style={{ width: 4, height: 24, background: accentColor, borderRadius: 2 }} />
-          <span style={{ fontSize: 18, color: '#71717a' }}>fitness-blog-xi.vercel.app</span>
+          <span style={{ fontSize: 18, color: '#71717a' }}>burnlab.co.uk</span>
         </div>
       </div>
     ),

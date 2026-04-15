@@ -5,7 +5,7 @@ import { supabaseAdmin } from '@/lib/supabase'
 import BodyWeightChart from '@/components/charts/BodyWeightChart'
 import ExerciseProgressChart from '@/components/charts/ExerciseProgressChart'
 
-export const metadata = { title: 'Progress — IronPulse Fitness' }
+export const metadata = { title: 'Progress — BurnLab' }
 
 type SetLog = { weight: number; reps: number }
 

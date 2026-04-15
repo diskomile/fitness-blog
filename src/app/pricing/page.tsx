@@ -4,7 +4,7 @@ import FaqSchema from '@/components/seo/FaqSchema'
 
 export const metadata: Metadata = {
   title: 'Pricing — Free & Pro Plans',
-  description: 'IronPulse Fitness is free to use. Upgrade to Pro for workout logging, advanced analytics, exercise GIFs, and more.',
+  description: 'BurnLab is free to use. Upgrade to Pro for workout logging, advanced analytics, exercise GIFs, and more.',
 }
 
 const freeFeatures = [

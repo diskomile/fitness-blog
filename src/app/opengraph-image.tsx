@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'IronPulse Fitness'
+export const alt = 'BurnLab'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -47,8 +47,8 @@ export default function Image() {
         {/* Content */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: 24 }}>
-            <span style={{ fontSize: 56, fontWeight: 900, color: '#f97316' }}>Iron</span>
-            <span style={{ fontSize: 56, fontWeight: 900, color: '#ffffff' }}>Pulse</span>
+            <span style={{ fontSize: 56, fontWeight: 900, color: '#f97316' }}>Burn</span>
+            <span style={{ fontSize: 56, fontWeight: 900, color: '#ffffff' }}>Lab</span>
           </div>
           <p style={{ fontSize: 24, color: '#71717a', margin: 0 }}>
             Evidence-Based Fitness — Free Forever
