@@ -55,7 +55,7 @@ Return ONLY a JSON object with this exact structure:
       "originalPrice": "£XX.XX",
       "dealPrice": "£XX.XX",
       "discount": "XX%",
-      "url": "https://www.amazon.co.uk/s?k=url+encoded+search+query&tag={amazon_tag}",
+      "url": "https://www.amazon.co.uk/dp/ASIN_CODE?tag={amazon_tag}",
       "description": "One sentence describing the product and why it's good value.",
       "expires": "{expires}"
     }}
@@ -66,10 +66,12 @@ Requirements:
 - 3 supplement deals (whey protein, creatine, pre-workout, BCAAs, vitamins, etc.)
 - 2 gear deals (resistance bands, dumbbells, straps, gym bag, foam roller, etc.)
 - 1 nutrition deal (protein bars, meal prep containers, food scale, etc.)
-- All URLs must use Amazon UK (amazon.co.uk) search format with tag={amazon_tag}
+- IMPORTANT: Use direct Amazon UK product URLs with ASIN in format: https://www.amazon.co.uk/dp/ASIN?tag={amazon_tag}
+- Use real ASINs for well-known products (e.g. ON Gold Standard Whey B00E9M4XEE, Creatine B002DYIZEO)
+- If unsure of exact ASIN, use a very specific search: https://www.amazon.co.uk/s?k=exact+product+name+brand+size&tag={amazon_tag}
 - Prices in GBP, realistic for UK market
 - Discounts between 15-50%
-- Different products from previous batches — rotate variety
+- Different products each time — rotate variety
 
 Generate the JSON now:"""
 
