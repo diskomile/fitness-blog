@@ -29,6 +29,9 @@ export default function Header() {
           <Link href="/supplements" className="text-sm text-zinc-400 hover:text-white transition-colors">
             Supplements
           </Link>
+          <Link href="/gear" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Gear
+          </Link>
 
           {/* Categories dropdown */}
           <div className="group relative">
