@@ -47,7 +47,7 @@ const products: Product[] = [
     pros: ['Highest protein % on the list', 'Clean ingredients', 'Great texture', 'Transparent labelling'],
     cons: ['Fewer flavours than Myprotein', 'Slightly more expensive'],
     verdict: 'Best ingredient quality at this price point. Bulk is transparent about sourcing and avoids unnecessary fillers. Worth the small premium.',
-    affiliateUrl: 'https://www.bulk.com/uk/complete-whey-protein.html',
+    affiliateUrl: 'https://www.bulk.com/uk/protein/whey-protein/',
     score: 9,
   },
   {
@@ -61,7 +61,7 @@ const products: Product[] = [
     pros: ['Strong in southern Europe', 'Frequent discount codes', 'Good taste profile'],
     cons: ['Slightly lower protein % than competitors', 'Shipping slower to some countries'],
     verdict: 'Solid mid-range option. Prozis runs aggressive promotions — wait for a sale and you\'ll get excellent value, especially in Spain, Portugal, and Italy.',
-    affiliateUrl: 'https://www.prozis.com/en/whey-protein',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=prozis+whey+protein+80&tag=ironpulse02-21',
     score: 8,
   },
   {
@@ -89,7 +89,7 @@ const products: Product[] = [
     pros: ['Ships globally', 'Unflavoured option great for cooking', 'No artificial sweeteners'],
     cons: ['Lowest protein % per serving', 'Very limited flavours', 'Short cookie window for affiliate'],
     verdict: 'Good option if you want unflavoured whey or live outside standard European shipping zones. Not the best protein % but clean ingredients.',
-    affiliateUrl: 'https://www.iherb.com/c/whey-protein',
+    affiliateUrl: 'https://www.amazon.co.uk/s?k=now+sports+whey+protein+concentrate&tag=ironpulse02-21',
     score: 7,
   },
   {

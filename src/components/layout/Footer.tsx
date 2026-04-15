@@ -119,6 +119,7 @@ export default function Footer() {
             <Link href="/terms" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Terms</Link>
             <Link href="/sitemap.xml" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Sitemap</Link>
             <Link href="/pricing" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Pricing</Link>
+            <Link href="/refund-policy" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">Refund Policy</Link>
           </div>
         </div>
       </div>
