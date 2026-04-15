@@ -51,6 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'best-multivitamin',
     'best-zma-magnesium',
     'best-fat-burner',
+    'best-vitamin-d',
+    'best-casein-protein',
   ]
 
   const supplementEntries: MetadataRoute.Sitemap = supplementSlugs.map((slug) => ({

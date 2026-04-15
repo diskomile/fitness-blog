@@ -63,6 +63,20 @@ const comparisons = [
     icon: '🔥',
     badge: 'New',
   },
+  {
+    href: '/supplements/best-vitamin-d',
+    title: 'Best Vitamin D Supplements',
+    description: 'Over 50% of UK adults are deficient. We compare D3 vs D2, optimal doses, and the best value options for year-round supplementation.',
+    icon: '☀️',
+    badge: 'New',
+  },
+  {
+    href: '/supplements/best-casein-protein',
+    title: 'Best Casein Protein for Recovery',
+    description: 'Casein digests over 5–7 hours — perfect before bed. We compare micellar casein supplements by protein content and price per serving.',
+    icon: '🌙',
+    badge: 'New',
+  },
 ]
 
 export default function SupplementsPage() {
