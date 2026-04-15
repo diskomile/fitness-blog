@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
+import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants'
+
+const GA_ID = 'G-EGRN6HKQ84'
 
 const ADSENSE_ID = 'ca-pub-1924666314588553'
 
@@ -62,6 +65,13 @@ export default function RootLayout({
           </head>
         )}
         <body className="flex min-h-full flex-col bg-zinc-950 text-zinc-100">
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+          <Script id="ga-init" strategy="afterInteractive">{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}</Script>
           <Header />
           <div className="flex-1">{children}</div>
           <Footer />
