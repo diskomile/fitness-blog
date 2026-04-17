@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { WORKOUT_PLANS, getPlanBySlug, getPlanColorClasses } from '@/lib/workout-plans'
 import { getPlanLogs } from '@/app/workout-log/actions'
 import WorkoutLogger from '@/components/workout/WorkoutLogger'
+import ExerciseHowToModal from '@/components/workout/ExerciseHowToModal'
 
 export function generateStaticParams() {
   return WORKOUT_PLANS.map((p) => ({ plan: p.slug }))
@@ -86,7 +87,15 @@ export default async function PlanPage({ params }: { params: Promise<{ plan: str
                       <p className="text-xs text-zinc-500">sets × reps</p>
                     </div>
                   </div>
-                  <p className="mt-2 text-xs text-zinc-400">💡 {ex.tip}</p>
+                  <div className="mt-2 flex items-start justify-between gap-3">
+                    <p className="text-xs text-zinc-400">💡 {ex.tip}</p>
+                    <ExerciseHowToModal
+                      name={ex.name}
+                      muscle={ex.muscle}
+                      tip={ex.tip}
+                      gifUrl={ex.gifUrl}
+                    />
+                  </div>
                 </div>
               ))}
             </div>

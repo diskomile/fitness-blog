@@ -4,6 +4,7 @@ export type Exercise = {
   reps: string
   muscle: string
   tip: string
+  gifUrl?: string
 }
 
 export type WorkoutDay = {
