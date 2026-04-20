@@ -35,7 +35,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://*.supabase.co https://img.clerk.com https://images.clerk.dev",
       "connect-src 'self' https://*.supabase.co https://api.clerk.dev https://*.clerk.accounts.dev wss://*.supabase.co https://api.stripe.com",
-      "frame-src 'self' https://challenges.cloudflare.com https://accounts.google.com",
+      "frame-src 'self' https://challenges.cloudflare.com https://accounts.google.com https://www.youtube.com https://www.youtube-nocookie.com",
       "frame-ancestors 'self'",
     ].join('; '),
   },
