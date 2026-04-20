@@ -77,7 +77,6 @@ const YOUTUBE_IDS: Record<string, string> = {
   'Rowing Machine':            'H0r_DsM1QeE',
   "Farmer's Carry":            'wOKNHnYgwIU',
   'Sled Push':                 'WGYH9jMXb0Y',
-  'Push-Up Variation':         '0pkjOk0EiAk',
 }
 
 export default function ExerciseHowToModal({ name, muscle, tip, gifUrl }: Props) {
