@@ -1,77 +1,77 @@
 {
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-05-01",
   "deals": [
     {
-      "id": "on-gold-standard-whey",
-      "name": "Optimum Nutrition Gold Standard Whey 2.27kg",
+      "id": "optimum-nutrition-whey-deal",
+      "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£54.99",
-      "dealPrice": "£42.99",
-      "discount": "22%",
-      "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "24g protein per serving, 5.5g BCAAs. World's best-selling whey protein.",
-      "expires": "2026-04-18"
-    },
-    {
-      "id": "on-creatine",
-      "name": "Optimum Nutrition Micronized Creatine Powder 317g",
-      "category": "supplements",
-      "badge": "Best Value",
-      "originalPrice": "£18.99",
-      "dealPrice": "£13.99",
-      "discount": "26%",
-      "url": "https://www.amazon.co.uk/s?k=optimum+nutrition+micronized+creatine+monohydrate+powder&tag=ironpulse02-21",
-      "description": "Pure micronized creatine monohydrate. 5g per serving, unflavoured, mixes easily.",
-      "expires": "2026-04-18"
-    },
-    {
-      "id": "on-pre-workout",
-      "name": "Optimum Nutrition Gold Standard Pre-Workout 330g",
-      "category": "supplements",
-      "badge": "Popular",
-      "originalPrice": "£29.99",
-      "dealPrice": "£21.99",
-      "discount": "27%",
-      "url": "https://www.amazon.co.uk/dp/B01G3HJOQO?tag=ironpulse02-21",
-      "description": "175mg caffeine, creatine, beta-alanine and citrulline for energy and performance.",
-      "expires": "2026-04-18"
-    },
-    {
-      "id": "resistance-bands-set",
-      "name": "Fit Simplify Resistance Loop Bands Set of 5",
-      "category": "gear",
-      "badge": "Top Pick",
-      "originalPrice": "£19.99",
-      "dealPrice": "£12.95",
-      "discount": "35%",
-      "url": "https://www.amazon.co.uk/dp/B01AVDVHTI?tag=ironpulse02-21",
-      "description": "5-band set from light to heavy resistance. Perfect for home workouts and rehab.",
-      "expires": "2026-04-18"
-    },
-    {
-      "id": "foam-roller",
-      "name": "TriggerPoint GRID Foam Roller 33cm",
-      "category": "gear",
-      "badge": "Editor's Pick",
       "originalPrice": "£34.99",
       "dealPrice": "£24.99",
-      "discount": "29%",
-      "url": "https://www.amazon.co.uk/s?k=triggerpoint+grid+foam+roller&tag=ironpulse02-21",
-      "description": "Multi-density foam roller for muscle recovery. Used by professional athletes.",
-      "expires": "2026-04-18"
+      "discount": "28%",
+      "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
+      "description": "High-quality whey protein powder with 24g protein per serving, now at a discounted price.",
+      "expires": "2026-05-04"
     },
     {
-      "id": "food-scale",
-      "name": "Etekcity Food Kitchen Scale Digital 5kg",
+      "id": "myprotein-creatine-deal",
+      "name": "Myprotein Creatine Monohydrate Powder",
+      "category": "supplements",
+      "badge": "Top Pick",
+      "originalPrice": "£19.99",
+      "dealPrice": "£14.99",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/s?k=Myprotein+Creatine+Monohydrate+Powder&tag=ironpulse02-21",
+      "description": "Pure creatine monohydrate powder to boost muscle strength and endurance, now at a discounted price.",
+      "expires": "2026-05-04"
+    },
+    {
+      "id": "bulk-powders-bcaa-deal",
+      "name": "Bulk Powders BCAA Powder",
+      "category": "supplements",
+      "badge": "Sale",
+      "originalPrice": "£24.99",
+      "dealPrice": "£17.49",
+      "discount": "30%",
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder&tag=ironpulse02-21",
+      "description": "High-quality BCAA powder to aid muscle recovery and growth, now at a discounted price.",
+      "expires": "2026-05-04"
+    },
+    {
+      "id": "yoga-mad-resistance-bands-deal",
+      "name": "Yoga Mad Resistance Bands",
+      "category": "gear",
+      "badge": "Popular",
+      "originalPrice": "£14.99",
+      "dealPrice": "£9.99",
+      "discount": "33%",
+      "url": "https://www.amazon.co.uk/s?k=Yoga+Mad+Resistance+Bands&tag=ironpulse02-21",
+      "description": "High-quality resistance bands for strength training and rehabilitation, now at a discounted price.",
+      "expires": "2026-05-04"
+    },
+    {
+      "id": "domyos-dumbbells-deal",
+      "name": "Domyos Adjustable Dumbbells",
+      "category": "gear",
+      "badge": "Editor's Pick",
+      "originalPrice": "£49.99",
+      "dealPrice": "£39.99",
+      "discount": "20%",
+      "url": "https://www.amazon.co.uk/s?k=Domyos+Adjustable+Dumbbells&tag=ironpulse02-21",
+      "description": "Adjustable dumbbells for a full-body workout, now at a discounted price.",
+      "expires": "2026-05-04"
+    },
+    {
+      "id": "quest-nutrition-protein-bars-deal",
+      "name": "Quest Nutrition Protein Bars",
       "category": "nutrition",
-      "badge": "Essential Tool",
-      "originalPrice": "£15.99",
-      "dealPrice": "£10.99",
-      "discount": "31%",
-      "url": "https://www.amazon.co.uk/s?k=etekcity+food+kitchen+scale+digital+5kg&tag=ironpulse02-21",
-      "description": "Precise 0.1g digital scale. The #1 tool for tracking macros and calories accurately.",
-      "expires": "2026-04-18"
+      "badge": "Best Value",
+      "originalPrice": "£29.99",
+      "dealPrice": "£19.99",
+      "discount": "33%",
+      "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bars&tag=ironpulse02-21",
+      "description": "High-protein bars with low sugar and carbs, now at a discounted price.",
+      "expires": "2026-05-04"
     }
   ]
 }
