@@ -3,6 +3,7 @@ import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import { WORKOUT_PLANS, getPlanBySlug, getPlanColorClasses } from '@/lib/workout-plans'
 import { getPlanLogs } from '@/app/workout-log/actions'
+import { lookupExercise } from '@/lib/exercise-db'
 import WorkoutLogger from '@/components/workout/WorkoutLogger'
 import ExerciseHowToModal from '@/components/workout/ExerciseHowToModal'
 
@@ -89,12 +90,19 @@ export default async function PlanPage({ params }: { params: Promise<{ plan: str
                   </div>
                   <div className="mt-2 flex items-start justify-between gap-3">
                     <p className="text-xs text-zinc-400">💡 {ex.tip}</p>
-                    <ExerciseHowToModal
-                      name={ex.name}
-                      muscle={ex.muscle}
-                      tip={ex.tip}
-                      gifUrl={ex.gifUrl}
-                    />
+                    {(() => {
+                      const wger = lookupExercise(ex.name)
+                      return (
+                        <ExerciseHowToModal
+                          name={ex.name}
+                          muscle={ex.muscle}
+                          tip={ex.tip}
+                          image1={wger?.image1}
+                          image2={wger?.image2}
+                          description={wger?.description}
+                        />
+                      )
+                    })()}
                   </div>
                 </div>
               ))}

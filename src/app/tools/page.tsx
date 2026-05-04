@@ -92,6 +92,13 @@ const tools = [
     icon: '🌙',
     badge: 'New',
   },
+  {
+    href: '/tools/workout-generator',
+    title: 'Workout Plan Generator',
+    description: 'Answer 4 questions and get a personalised AI workout plan with exercise instructions for your exact goal and equipment.',
+    icon: '🤖',
+    badge: 'AI',
+  },
 ]
 
 export default function ToolsPage() {
@@ -113,7 +120,7 @@ export default function ToolsPage() {
             className="group relative flex flex-col rounded-xl border border-zinc-800 bg-zinc-900 p-6 transition-colors hover:border-orange-500/50"
           >
             {tool.badge && (
-              <span className={`absolute right-4 top-4 rounded-full px-2 py-0.5 text-xs font-semibold ${tool.badge === 'New' ? 'bg-green-600 text-white' : 'bg-orange-500 text-white'}`}>
+              <span className={`absolute right-4 top-4 rounded-full px-2 py-0.5 text-xs font-semibold ${tool.badge === 'New' ? 'bg-green-600 text-white' : tool.badge === 'AI' ? 'bg-purple-600 text-white' : 'bg-orange-500 text-white'}`}>
                 {tool.badge}
               </span>
             )}

@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'bmi-calculator',
     'water-intake',
     'sleep-calculator',
+    'workout-generator',
   ]
 
   const toolEntries: MetadataRoute.Sitemap = toolSlugs.map((slug) => ({
