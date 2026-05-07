@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-07",
   "deals": [
     {
       "id": "optimum-nutrition-whey-deal",
       "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£34.99",
-      "dealPrice": "£24.99",
-      "discount": "28%",
+      "originalPrice": "£44.99",
+      "dealPrice": "£34.99",
+      "discount": "22%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
       "description": "High-quality whey protein powder with 24g of protein per serving, now at a discounted price.",
-      "expires": "2026-05-07"
+      "expires": "2026-05-10"
     },
     {
       "id": "myprotein-creatine-deal",
@@ -22,32 +22,32 @@
       "dealPrice": "£14.99",
       "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
-      "description": "Pure creatine monohydrate powder to boost muscle strength and endurance, now at a reduced price.",
-      "expires": "2026-05-07"
+      "description": "Pure creatine monohydrate powder to boost muscle strength and endurance, now at a discounted price.",
+      "expires": "2026-05-10"
     },
     {
-      "id": "bsn-pre-workout-deal",
-      "name": "BSN N.O.-Xplode Pre-Workout Powder",
+      "id": "bulk-powders-bcaa-deal",
+      "name": "Bulk Powders BCAA Powder",
       "category": "supplements",
       "badge": "Sale",
-      "originalPrice": "£29.99",
+      "originalPrice": "£24.99",
       "dealPrice": "£19.99",
-      "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=BSN+N.O.-Xplode+Pre-Workout+Powder&tag=ironpulse02-21",
-      "description": "Intense pre-workout formula to enhance energy and performance, now at a discounted price.",
-      "expires": "2026-05-07"
+      "discount": "20%",
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder&tag=ironpulse02-21",
+      "description": "High-quality BCAA powder to aid in muscle recovery and growth, now at a discounted price.",
+      "expires": "2026-05-10"
     },
     {
       "id": "amazon-basics-dumbbells-deal",
-      "name": "Amazon Basics Neoprene Coated Dumbbells",
+      "name": "Amazon Basics Neoprene Dumbbell Set",
       "category": "gear",
       "badge": "Best Value",
-      "originalPrice": "£25.00",
-      "dealPrice": "£19.00",
-      "discount": "24%",
-      "url": "https://www.amazon.co.uk/s?k=Amazon+Basics+Neoprene+Coated+Dumbbells&tag=ironpulse02-21",
-      "description": "High-quality neoprene coated dumbbells for strength training, now at an affordable price.",
-      "expires": "2026-05-07"
+      "originalPrice": "£29.99",
+      "dealPrice": "£22.99",
+      "discount": "23%",
+      "url": "https://www.amazon.co.uk/s?k=Amazon+Basics+Neoprene+Dumbbell+Set&tag=ironpulse02-21",
+      "description": "A set of high-quality neoprene dumbbells for strength training, now at a discounted price.",
+      "expires": "2026-05-10"
     },
     {
       "id": "triggerpoint-foam-roller-deal",
@@ -58,8 +58,8 @@
       "dealPrice": "£29.99",
       "discount": "25%",
       "url": "https://www.amazon.co.uk/s?k=TriggerPoint+GRID+Foam+Roller&tag=ironpulse02-21",
-      "description": "Premium foam roller for self-myofascial release and muscle recovery, now at a reduced price.",
-      "expires": "2026-05-07"
+      "description": "A high-quality foam roller for self-myofascial release and muscle recovery, now at a discounted price.",
+      "expires": "2026-05-10"
     },
     {
       "id": "quest-nutrition-protein-bars-deal",
@@ -70,8 +70,8 @@
       "dealPrice": "£19.99",
       "discount": "20%",
       "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bars&tag=ironpulse02-21",
-      "description": "Delicious and nutritious protein bars with 20g of protein per serving, now at a discounted price.",
-      "expires": "2026-05-07"
+      "description": "A box of high-quality protein bars with 20g of protein per serving, now at a discounted price.",
+      "expires": "2026-05-10"
     }
   ]
 }
