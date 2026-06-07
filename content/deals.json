@@ -1,77 +1,77 @@
 {
-  "last_updated": "2026-06-04",
+  "last_updated": "2026-06-07",
   "deals": [
     {
-      "id": "optimum-nutrition-whey-deal",
+      "id": "optimum-nutrition-whey-protein-deal",
       "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£34.99",
-      "dealPrice": "£24.99",
-      "discount": "28%",
+      "originalPrice": "£49.99",
+      "dealPrice": "£37.49",
+      "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "High-quality whey protein powder with 24g protein per serving, now at a discounted price.",
-      "expires": "2026-06-07"
+      "description": "Get high-quality whey protein powder from a trusted brand at a discounted price, perfect for post-workout recovery.",
+      "expires": "2026-06-10"
     },
     {
       "id": "myprotein-creatine-deal",
       "name": "Myprotein Creatine Monohydrate Powder",
       "category": "supplements",
       "badge": "Top Pick",
-      "originalPrice": "£19.99",
-      "dealPrice": "£14.99",
-      "discount": "25%",
+      "originalPrice": "£24.99",
+      "dealPrice": "£19.99",
+      "discount": "20%",
       "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
-      "description": "Pure creatine monohydrate powder to boost strength and endurance, now at a discounted price.",
-      "expires": "2026-06-07"
+      "description": "Boost your workout performance with this high-quality creatine supplement at a discounted price.",
+      "expires": "2026-06-12"
     },
     {
-      "id": "bulk-powders-bcaa-deal",
-      "name": "Bulk Powders BCAA Powder",
+      "id": "bulk-supplements-bcaa-deal",
+      "name": "BULK POWDERS BCAA Powder",
       "category": "supplements",
       "badge": "Sale",
-      "originalPrice": "£24.99",
-      "dealPrice": "£17.49",
+      "originalPrice": "£34.99",
+      "dealPrice": "£24.49",
       "discount": "30%",
-      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder+500g&tag=ironpulse02-21",
-      "description": "High-quality BCAA powder to aid muscle recovery, now at a discounted price.",
-      "expires": "2026-06-07"
+      "url": "https://www.amazon.co.uk/s?k=BULK+POWDERS+BCAA+Powder+500g&tag=ironpulse02-21",
+      "description": "Recover faster with this BCAA powder from a reputable brand, now at a discounted price.",
+      "expires": "2026-06-11"
     },
     {
-      "id": "amazon-basics-dumbbells-deal",
-      "name": "Amazon Basics Neoprene Dumbbells",
+      "id": "xmark-fitness-dumbbells-deal",
+      "name": "XMark Fitness Adjustable Dumbbells",
       "category": "gear",
-      "badge": "Best Value",
-      "originalPrice": "£29.99",
-      "dealPrice": "£22.99",
-      "discount": "23%",
-      "url": "https://www.amazon.co.uk/dp/B076MX9RYG?tag=ironpulse02-21",
-      "description": "Durable neoprene dumbbells for strength training, now at a discounted price.",
-      "expires": "2026-06-07"
+      "badge": "Editor's Pick",
+      "originalPrice": "£129.99",
+      "dealPrice": "£89.99",
+      "discount": "31%",
+      "url": "https://www.amazon.co.uk/s?k=XMark+Fitness+Adjustable+Dumbbells+20kg&tag=ironpulse02-21",
+      "description": "Upgrade your home gym with these adjustable dumbbells, now at a discounted price.",
+      "expires": "2026-06-14"
     },
     {
-      "id": "xiser-resistance-bands-deal",
-      "name": "Xiser Resistance Bands",
+      "id": "perform-better-resistance-bands-deal",
+      "name": "Perform Better Resistance Bands",
       "category": "gear",
       "badge": "Popular",
-      "originalPrice": "£39.99",
-      "dealPrice": "£29.99",
-      "discount": "25%",
-      "url": "https://www.amazon.co.uk/s?k=Xiser+Resistance+Bands&tag=ironpulse02-21",
-      "description": "Portable resistance bands for strength training on-the-go, now at a discounted price.",
-      "expires": "2026-06-07"
+      "originalPrice": "£29.99",
+      "dealPrice": "£19.99",
+      "discount": "33%",
+      "url": "https://www.amazon.co.uk/s?k=Perform+Better+Resistance+Bands+Set+of+4&tag=ironpulse02-21",
+      "description": "Add variety to your workouts with these resistance bands, now at a discounted price.",
+      "expires": "2026-06-13"
     },
     {
       "id": "quest-nutrition-protein-bars-deal",
       "name": "Quest Nutrition Protein Bars",
       "category": "nutrition",
-      "badge": "Editor's Pick",
-      "originalPrice": "£24.99",
-      "dealPrice": "£19.99",
-      "discount": "20%",
+      "badge": "Best Value",
+      "originalPrice": "£39.99",
+      "dealPrice": "£29.99",
+      "discount": "25%",
       "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bars+12+Pack&tag=ironpulse02-21",
-      "description": "Delicious and nutritious protein bars to support muscle growth, now at a discounted price.",
-      "expires": "2026-06-07"
+      "description": "Get delicious and nutritious protein bars from a reputable brand at a discounted price, perfect for on-the-go snacks.",
+      "expires": "2026-06-12"
     }
   ]
 }
