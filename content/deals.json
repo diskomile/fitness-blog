@@ -1,77 +1,77 @@
 {
-  "last_updated": "2026-06-07",
+  "last_updated": "2026-06-10",
   "deals": [
     {
-      "id": "optimum-nutrition-whey-protein-deal",
+      "id": "optimum-nutrition-whey-deal",
       "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£49.99",
-      "dealPrice": "£37.49",
-      "discount": "25%",
+      "originalPrice": "£34.99",
+      "dealPrice": "£24.99",
+      "discount": "28%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "Get high-quality whey protein powder from a trusted brand at a discounted price, perfect for post-workout recovery.",
-      "expires": "2026-06-10"
+      "description": "High-quality whey protein powder for muscle growth and recovery at an unbeatable price.",
+      "expires": "2026-06-13"
     },
     {
       "id": "myprotein-creatine-deal",
       "name": "Myprotein Creatine Monohydrate Powder",
       "category": "supplements",
       "badge": "Top Pick",
-      "originalPrice": "£24.99",
-      "dealPrice": "£19.99",
-      "discount": "20%",
-      "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
-      "description": "Boost your workout performance with this high-quality creatine supplement at a discounted price.",
-      "expires": "2026-06-12"
+      "originalPrice": "£19.99",
+      "dealPrice": "£14.99",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/s?k=Myprotein+Creatine+Monohydrate+500g&tag=ironpulse02-21",
+      "description": "Pure creatine monohydrate for enhanced strength and endurance at a discounted price.",
+      "expires": "2026-06-15"
     },
     {
-      "id": "bulk-supplements-bcaa-deal",
-      "name": "BULK POWDERS BCAA Powder",
+      "id": "bulk-powders-pre-workout-deal",
+      "name": "Bulk Powders Complete Pre-Workout",
       "category": "supplements",
       "badge": "Sale",
-      "originalPrice": "£34.99",
-      "dealPrice": "£24.49",
-      "discount": "30%",
-      "url": "https://www.amazon.co.uk/s?k=BULK+POWDERS+BCAA+Powder+500g&tag=ironpulse02-21",
-      "description": "Recover faster with this BCAA powder from a reputable brand, now at a discounted price.",
-      "expires": "2026-06-11"
-    },
-    {
-      "id": "xmark-fitness-dumbbells-deal",
-      "name": "XMark Fitness Adjustable Dumbbells",
-      "category": "gear",
-      "badge": "Editor's Pick",
-      "originalPrice": "£129.99",
-      "dealPrice": "£89.99",
-      "discount": "31%",
-      "url": "https://www.amazon.co.uk/s?k=XMark+Fitness+Adjustable+Dumbbells+20kg&tag=ironpulse02-21",
-      "description": "Upgrade your home gym with these adjustable dumbbells, now at a discounted price.",
-      "expires": "2026-06-14"
-    },
-    {
-      "id": "perform-better-resistance-bands-deal",
-      "name": "Perform Better Resistance Bands",
-      "category": "gear",
-      "badge": "Popular",
       "originalPrice": "£29.99",
       "dealPrice": "£19.99",
       "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=Perform+Better+Resistance+Bands+Set+of+4&tag=ironpulse02-21",
-      "description": "Add variety to your workouts with these resistance bands, now at a discounted price.",
-      "expires": "2026-06-13"
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+Complete+Pre-Workout+500g&tag=ironpulse02-21",
+      "description": "Comprehensive pre-workout formula for increased energy and focus at a reduced price.",
+      "expires": "2026-06-12"
     },
     {
-      "id": "quest-nutrition-protein-bars-deal",
-      "name": "Quest Nutrition Protein Bars",
-      "category": "nutrition",
-      "badge": "Best Value",
+      "id": "xd-design-gym-bag-deal",
+      "name": "XD Design Gym Bag",
+      "category": "gear",
+      "badge": "Popular",
       "originalPrice": "£39.99",
       "dealPrice": "£29.99",
       "discount": "25%",
-      "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bars+12+Pack&tag=ironpulse02-21",
-      "description": "Get delicious and nutritious protein bars from a reputable brand at a discounted price, perfect for on-the-go snacks.",
-      "expires": "2026-06-12"
+      "url": "https://www.amazon.co.uk/s?k=XD+Design+Gym+Bag+35L&tag=ironpulse02-21",
+      "description": "Durable and spacious gym bag for carrying all your fitness essentials at a discounted price.",
+      "expires": "2026-06-14"
+    },
+    {
+      "id": "amazon-basics-foam-roller-deal",
+      "name": "Amazon Basics Foam Roller",
+      "category": "gear",
+      "badge": "Best Value",
+      "originalPrice": "£14.99",
+      "dealPrice": "£9.99",
+      "discount": "33%",
+      "url": "https://www.amazon.co.uk/dp/B076MX9RYG?tag=ironpulse02-21",
+      "description": "High-density foam roller for muscle recovery and self-myofascial release at an affordable price.",
+      "expires": "2026-06-11"
+    },
+    {
+      "id": "clif-bar-energy-deal",
+      "name": "Clif Bar Energy Bars",
+      "category": "nutrition",
+      "badge": "Editor's Pick",
+      "originalPrice": "£24.99",
+      "dealPrice": "£19.99",
+      "discount": "20%",
+      "url": "https://www.amazon.co.uk/s?k=Clif+Bar+Energy+Bars+12+Pack&tag=ironpulse02-21",
+      "description": "Wholesome energy bars for pre- or post-workout snacking at a discounted price.",
+      "expires": "2026-06-16"
     }
   ]
 }
