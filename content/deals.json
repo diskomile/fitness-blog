@@ -1,77 +1,77 @@
 {
-  "last_updated": "2026-07-19",
+  "last_updated": "2026-07-22",
   "deals": [
     {
       "id": "optimum-nutrition-whey-deal",
       "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£49.99",
-      "dealPrice": "£34.99",
-      "discount": "30%",
+      "originalPrice": "£44.99",
+      "dealPrice": "£35.99",
+      "discount": "20%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "High-quality whey protein powder for muscle growth and recovery at a discounted price.",
-      "expires": "2026-07-22"
+      "description": "High-quality whey protein with 24g protein per serving, now at a discounted price.",
+      "expires": "2026-07-25"
     },
     {
       "id": "myprotein-creatine-deal",
       "name": "Myprotein Creatine Monohydrate Powder",
       "category": "supplements",
       "badge": "Top Pick",
-      "originalPrice": "£24.99",
-      "dealPrice": "£17.49",
-      "discount": "30%",
+      "originalPrice": "£19.99",
+      "dealPrice": "£14.99",
+      "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
-      "description": "Pure creatine monohydrate for increased strength and endurance at a great value.",
-      "expires": "2026-07-25"
+      "description": "Pure creatine monohydrate to boost strength and endurance, now at a discounted price.",
+      "expires": "2026-07-28"
     },
     {
       "id": "bulk-powders-bcaa-deal",
       "name": "Bulk Powders BCAA Powder",
       "category": "supplements",
-      "badge": "Sale",
-      "originalPrice": "£29.99",
-      "dealPrice": "£19.99",
-      "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder&tag=ironpulse02-21",
-      "description": "High-quality BCAA powder for muscle recovery and growth at a discounted price.",
-      "expires": "2026-07-20"
-    },
-    {
-      "id": "kettle-bell-deal",
-      "name": "York Fitness Kettlebell",
-      "category": "gear",
       "badge": "Popular",
-      "originalPrice": "£39.99",
-      "dealPrice": "£29.99",
-      "discount": "25%",
-      "url": "https://www.amazon.co.uk/s?k=York+Fitness+Kettlebell&tag=ironpulse02-21",
-      "description": "Durable and versatile kettlebell for strength training at a great price.",
-      "expires": "2026-07-24"
-    },
-    {
-      "id": "resistance-band-deal",
-      "name": "Black Mountain Products Resistance Band Set",
-      "category": "gear",
-      "badge": "Best Value",
-      "originalPrice": "£29.99",
-      "dealPrice": "£19.99",
-      "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=Black+Mountain+Products+Resistance+Band+Set&tag=ironpulse02-21",
-      "description": "Complete resistance band set for strength training and rehabilitation at an unbeatable price.",
-      "expires": "2026-07-23"
-    },
-    {
-      "id": "quest-bar-deal",
-      "name": "Quest Nutrition Protein Bar",
-      "category": "nutrition",
-      "badge": "Editor's Pick",
       "originalPrice": "£24.99",
       "dealPrice": "£19.99",
       "discount": "20%",
-      "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bar&tag=ironpulse02-21",
-      "description": "Delicious and nutritious protein bar for post-workout recovery or a quick snack at a great value.",
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder+500g&tag=ironpulse02-21",
+      "description": "High-quality BCAA powder to aid in muscle recovery, now at a discounted price.",
+      "expires": "2026-07-29"
+    },
+    {
+      "id": "amazon-basics-dumbbell-deal",
+      "name": "Amazon Basics Neoprene Dumbbell",
+      "category": "gear",
+      "badge": "Best Value",
+      "originalPrice": "£25.00",
+      "dealPrice": "£19.50",
+      "discount": "22%",
+      "url": "https://www.amazon.co.uk/s?k=Amazon+Basics+Neoprene+Dumbbell+12kg&tag=ironpulse02-21",
+      "description": "Durable and comfortable dumbbells for strength training, now at a discounted price.",
       "expires": "2026-07-26"
+    },
+    {
+      "id": "triggerpoint-foam-roller-deal",
+      "name": "TriggerPoint GRID Foam Roller",
+      "category": "gear",
+      "badge": "Editor's Pick",
+      "originalPrice": "£39.99",
+      "dealPrice": "£29.99",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/s?k=TriggerPoint+GRID+Foam+Roller&tag=ironpulse02-21",
+      "description": "High-quality foam roller for self-myofascial release and muscle recovery, now at a discounted price.",
+      "expires": "2026-07-27"
+    },
+    {
+      "id": "quest-nutrition-protein-bar-deal",
+      "name": "Quest Nutrition Protein Bar",
+      "category": "nutrition",
+      "badge": "Sale",
+      "originalPrice": "£29.99",
+      "dealPrice": "£22.99",
+      "discount": "23%",
+      "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bar+12+pack&tag=ironpulse02-21",
+      "description": "Delicious and nutritious protein bars to support muscle growth and recovery, now at a discounted price.",
+      "expires": "2026-07-24"
     }
   ]
 }
