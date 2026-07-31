@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-07-28",
+  "last_updated": "2026-07-31",
   "deals": [
     {
       "id": "optimum-nutrition-whey-deal",
       "name": "Optimum Nutrition Gold Standard 100% Whey Protein Powder",
       "category": "supplements",
       "badge": "Best Seller",
-      "originalPrice": "£34.99",
-      "dealPrice": "£24.99",
-      "discount": "28%",
+      "originalPrice": "£44.99",
+      "dealPrice": "£35.99",
+      "discount": "20%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "High-quality whey protein powder for muscle growth and recovery at an unbeatable price.",
-      "expires": "2026-07-31"
+      "description": "High-quality whey protein powder with 24g of protein per serving, now 20% off the original price.",
+      "expires": "2026-08-03"
     },
     {
       "id": "myprotein-creatine-deal",
@@ -22,56 +22,56 @@
       "dealPrice": "£14.99",
       "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
-      "description": "Pure creatine monohydrate for increased strength and endurance at a discounted price.",
-      "expires": "2026-07-31"
+      "description": "Pure creatine monohydrate powder to boost strength and endurance, now 25% off the original price.",
+      "expires": "2026-08-05"
     },
     {
       "id": "bulk-powders-bcaa-deal",
       "name": "Bulk Powders BCAA Powder",
       "category": "supplements",
       "badge": "Sale",
-      "originalPrice": "£24.99",
-      "dealPrice": "£17.49",
-      "discount": "30%",
-      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder&tag=ironpulse02-21",
-      "description": "High-quality BCAA powder for muscle recovery and growth at a discounted price.",
-      "expires": "2026-07-31"
+      "originalPrice": "£29.99",
+      "dealPrice": "£22.49",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder+500g&tag=ironpulse02-21",
+      "description": "High-quality BCAA powder to aid in muscle recovery, now 25% off the original price.",
+      "expires": "2026-08-07"
     },
     {
-      "id": "everlast-resistance-bands-deal",
-      "name": "Everlast Resistance Bands",
+      "id": "amazon-basics-dumbbells-deal",
+      "name": "Amazon Basics Neoprene Dumbbells",
       "category": "gear",
-      "badge": "Popular",
-      "originalPrice": "£14.99",
-      "dealPrice": "£9.99",
-      "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=Everlast+Resistance+Bands&tag=ironpulse02-21",
-      "description": "Portable and versatile resistance bands for strength training at home or on the go.",
-      "expires": "2026-07-31"
+      "badge": "Best Value",
+      "originalPrice": "£25.99",
+      "dealPrice": "£19.99",
+      "discount": "23%",
+      "url": "https://www.amazon.co.uk/dp/B076MX9RYG?tag=ironpulse02-21",
+      "description": "Durable and comfortable neoprene dumbbells for home workouts, now 23% off the original price.",
+      "expires": "2026-08-04"
     },
     {
-      "id": "domyos-dumbbells-deal",
-      "name": "Domyos Adjustable Dumbbells",
+      "id": "triggerpoint-foam-roller-deal",
+      "name": "TriggerPoint GRID Foam Roller",
       "category": "gear",
       "badge": "Editor's Pick",
-      "originalPrice": "£49.99",
-      "dealPrice": "£39.99",
-      "discount": "20%",
-      "url": "https://www.amazon.co.uk/s?k=Domyos+Adjustable+Dumbbells&tag=ironpulse02-21",
-      "description": "Space-saving and adjustable dumbbells for a full-body workout at home.",
-      "expires": "2026-07-31"
+      "originalPrice": "£39.99",
+      "dealPrice": "£29.99",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/dp/B001ASleDM?tag=ironpulse02-21",
+      "description": "High-quality foam roller for self-myofascial release and muscle recovery, now 25% off the original price.",
+      "expires": "2026-08-06"
     },
     {
-      "id": "maxitone-protein-bars-deal",
-      "name": "Maxitone Protein Bars",
+      "id": "quest-nutrition-protein-bars-deal",
+      "name": "Quest Nutrition Protein Bars",
       "category": "nutrition",
-      "badge": "Best Value",
+      "badge": "Popular",
       "originalPrice": "£24.99",
       "dealPrice": "£19.99",
       "discount": "20%",
-      "url": "https://www.amazon.co.uk/s?k=Maxitone+Protein+Bars&tag=ironpulse02-21",
-      "description": "Delicious and convenient protein bars for post-workout recovery and snacking.",
-      "expires": "2026-07-31"
+      "url": "https://www.amazon.co.uk/s?k=Quest+Nutrition+Protein+Bars+12+Pack&tag=ironpulse02-21",
+      "description": "Delicious and nutritious protein bars with 20g of protein per serving, now 20% off the original price.",
+      "expires": "2026-08-02"
     }
   ]
 }
