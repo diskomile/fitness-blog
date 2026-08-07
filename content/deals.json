@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-07",
   "deals": [
     {
       "id": "optimum-nutrition-whey-deal",
@@ -7,11 +7,11 @@
       "category": "supplements",
       "badge": "Best Seller",
       "originalPrice": "£49.99",
-      "dealPrice": "£34.99",
-      "discount": "30%",
+      "dealPrice": "£37.49",
+      "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B00E9M4XEE?tag=ironpulse02-21",
-      "description": "High-quality whey protein powder with 24g protein per serving, now at a discounted price.",
-      "expires": "2026-08-07"
+      "description": "High-quality whey protein powder with 24g of protein per serving, now at a discounted price.",
+      "expires": "2026-08-10"
     },
     {
       "id": "myprotein-creatine-deal",
@@ -23,55 +23,55 @@
       "discount": "25%",
       "url": "https://www.amazon.co.uk/dp/B002DYIZEO?tag=ironpulse02-21",
       "description": "Pure creatine monohydrate powder to boost muscle strength and endurance, now at a discounted price.",
-      "expires": "2026-08-07"
+      "expires": "2026-08-12"
     },
     {
-      "id": "bulk-powders-pre-workout-deal",
-      "name": "Bulk Powders Complete Pre-Workout",
+      "id": "bulk-powders-bcaa-deal",
+      "name": "Bulk Powders BCAA Powder",
       "category": "supplements",
       "badge": "Sale",
-      "originalPrice": "£29.99",
-      "dealPrice": "£19.99",
-      "discount": "33%",
-      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+Complete+Pre-Workout+500g&tag=ironpulse02-21",
-      "description": "Comprehensive pre-workout formula with beta-alanine, creatine, and BCAAs, now at a discounted price.",
-      "expires": "2026-08-07"
+      "originalPrice": "£24.99",
+      "dealPrice": "£17.49",
+      "discount": "30%",
+      "url": "https://www.amazon.co.uk/s?k=Bulk+Powders+BCAA+Powder&tag=ironpulse02-21",
+      "description": "High-quality BCAA powder to aid in muscle recovery and growth, now at a discounted price.",
+      "expires": "2026-08-11"
     },
     {
       "id": "amazon-basics-dumbbells-deal",
       "name": "Amazon Basics 20kg Dumbbell Set",
       "category": "gear",
       "badge": "Best Value",
-      "originalPrice": "£69.99",
-      "dealPrice": "£49.99",
-      "discount": "29%",
-      "url": "https://www.amazon.co.uk/s?k=Amazon+Basics+20kg+Dumbbell+Set&tag=ironpulse02-21",
-      "description": "Durable and adjustable dumbbell set for home workouts, now at a discounted price.",
-      "expires": "2026-08-07"
-    },
-    {
-      "id": "triggerpoint-foam-roller-deal",
-      "name": "TriggerPoint GRID Foam Roller",
-      "category": "gear",
-      "badge": "Editor's Pick",
-      "originalPrice": "£39.99",
-      "dealPrice": "£29.99",
-      "discount": "25%",
-      "url": "https://www.amazon.co.uk/s?k=TriggerPoint+GRID+Foam+Roller&tag=ironpulse02-21",
-      "description": "High-quality foam roller for self-myofascial release and muscle recovery, now at a discounted price.",
-      "expires": "2026-08-07"
-    },
-    {
-      "id": "clif-bar-energy-deal",
-      "name": "Clif Bar Energy Bars Variety Pack",
-      "category": "nutrition",
-      "badge": "Popular",
-      "originalPrice": "£24.99",
-      "dealPrice": "£19.99",
+      "originalPrice": "£49.99",
+      "dealPrice": "£39.99",
       "discount": "20%",
-      "url": "https://www.amazon.co.uk/s?k=Clif+Bar+Energy+Bars+Variety+Pack&tag=ironpulse02-21",
-      "description": "Convenient and tasty energy bars for pre- or post-workout snacking, now at a discounted price.",
-      "expires": "2026-08-07"
+      "url": "https://www.amazon.co.uk/s?k=Amazon+Basics+20kg+Dumbbell+Set&tag=ironpulse02-21",
+      "description": "A complete dumbbell set for home workouts, now at a discounted price.",
+      "expires": "2026-08-10"
+    },
+    {
+      "id": "prosource-resistance-bands-deal",
+      "name": "Prosource Resistance Bands Set",
+      "category": "gear",
+      "badge": "Popular",
+      "originalPrice": "£29.99",
+      "dealPrice": "£19.99",
+      "discount": "33%",
+      "url": "https://www.amazon.co.uk/s?k=Prosource+Resistance+Bands+Set&tag=ironpulse02-21",
+      "description": "A set of high-quality resistance bands for strength training and stretching, now at a discounted price.",
+      "expires": "2026-08-12"
+    },
+    {
+      "id": "maxi-nutrition-protein-bars-deal",
+      "name": "Maxi Nutrition Protein Bars",
+      "category": "nutrition",
+      "badge": "Editor's Pick",
+      "originalPrice": "£29.99",
+      "dealPrice": "£22.49",
+      "discount": "25%",
+      "url": "https://www.amazon.co.uk/s?k=Maxi+Nutrition+Protein+Bars&tag=ironpulse02-21",
+      "description": "Delicious and nutritious protein bars to support muscle growth and recovery, now at a discounted price.",
+      "expires": "2026-08-11"
     }
   ]
 }
